@@ -58,6 +58,7 @@ Text Domain: twentytwenty-child
   --color-yellow: #EBC805;
   --border-color: #D6D6D6;
   --border-light-color: #F0F0F0;
+  --color-dark-black: #111111;
 }
 
 
@@ -67,19 +68,19 @@ Text Domain: twentytwenty-child
 .inner-section-1366 {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 25px 15px;
+  padding: 0 15px;
 }
 
 .inner-section-1220 {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 25px 15px;
+  padding: 0 15px;
 }
 
 .inner-section-1120 {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 25px 15px;
+  padding: 0 15px;
 }
 
 body {
@@ -101,6 +102,7 @@ h1,h2,h3,h4,h5,h6,label,p,li,ul, li > ul, li > ol {
 
 h1,h2,h3 {
   font-family: 'GT-Super-Display-Bold', sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
@@ -279,4 +281,95 @@ button:focus {
 .header-account a,
 .header-cart a {
   color: var(--color-black);
+}
+
+/* ====================================================================== */
+/* ============================ Footer Style ============================ */
+/* ====================================================================== */
+.footer-nav {
+  background-color: var(--color-dark-black);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 40px 0px 40px 0px;
+}
+
+.footer-nav__inner {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 50px;
+}
+
+.footer-contact h2 {
+  font-size: 20px;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.footer-contact a {
+  color: var(--color-white);
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact ul li {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 0;
+}
+
+.footer-menu--items h2 {
+  font-size: 20px;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.footer-menu--items ul li {
+  margin: 0;
+}
+
+.footer-menu--items ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-white);
+}
+
+.footer-copyright {
+  background-color: var(--color-black);
+  padding-bottom: 20px;
+}
+
+.footer-copyright hr {
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.copyright-text p {
+  color: var(--color-white);
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.copyright-text p:last-child {
+  margin-bottom: 0;
 }
