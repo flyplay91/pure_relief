@@ -21,6 +21,7 @@
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/b1eb609035.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.magnific-popup.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/slick.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/custom-js.js"></script>
@@ -36,12 +37,15 @@
 		$announcebar_button_1_link = get_field('button_1_link', 'option');
 		$announcebar_button_2_text = get_field('button_2_text', 'option');
 		$announcebar_button_2_link = get_field('button_2_link', 'option');
+
+		$logo_img = get_field('logo_image', 'option')['url'];
+		$logo_alt = get_field('logo_image', 'option')['alt'];
 		
 	?>
 
 	<body <?php body_class(); ?>>
 		<header class="site-header">
-			<div class="header-top" style="background-image: url(<?php echo $announcebar_img_url ?>)">
+			<div class="header-bar" style="background-image: url(<?php echo $announcebar_img_url ?>)">
 				<?php if ($announcebar_title) : ?>
 					<h3><?php echo $announcebar_title ?></h3>
 				<?php endif; ?>
@@ -53,6 +57,64 @@
 					<?php endif; ?>
 			</div>
 
-			
+			<div class="header-nav">
+				<div class="header-logo">
+					<a href="/">
+						<?php if ($logo_img) : ?>
+							<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">
+						<?php else : ?>
+							<h2 class="logo-text">Pure Relief</h2>
+						<?php endif; ?>
+					</a>
+				</div>
+				<ul class="header-menu">
+					<?php
+					if ( has_nav_menu( 'primary' ) ) {
+
+						wp_nav_menu(
+							array(
+								'container'  => '',
+								'items_wrap' => '%3$s',
+								'theme_location' => 'primary',
+							)
+						);
+
+					} elseif ( ! has_nav_menu( 'expanded' ) ) {
+
+						wp_list_pages(
+							array(
+								'match_menu_classes' => true,
+								'show_sub_menu_icons' => true,
+								'title_li' => false,
+								'walker'   => new TwentyTwenty_Walker_Page(),
+							)
+						);
+
+					}
+					?>
+				</ul>
+
+				<div class="header-search-account-cart">
+					<div class="header-search">
+						<form>
+							<div class="header-search-form">
+								<i class="fa fa-search" aria-hidden="true"></i>
+								<input placeholder="Search..." class="elementor-search-form__input" type="search" name="s" title="Search" value="">
+							</div>
+						</form>
+						
+					</div>
+					<div class="header-account">
+						<a href="/my-account/">
+							<i aria-hidden="true" class="fas fa-user-circle"></i>
+						</a>
+					</div>
+					<div class="header-cart">
+						<a href="/cart/">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</div>
+				</div>
+			</div>
 		</header>
 

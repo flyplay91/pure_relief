@@ -52,8 +52,12 @@ Text Domain: twentytwenty-child
 :root {
   --color-white: #FFFFFF;
   --color-black: #000000;
+  --color-light-black: #54595F;
   --color-light-pink: #EAE1E3;
+  --color-grey-pink: #ECEEEF;
   --color-yellow: #EBC805;
+  --border-color: #D6D6D6;
+  --border-light-color: #F0F0F0;
 }
 
 
@@ -112,7 +116,7 @@ button:focus {
 /* =================================================================== */
 /* ====================== Header Style =============================== */
 /* =================================================================== */
-.header-top {
+.header-bar {
   background-color: var(--color-light-pink);
   padding: 5px 20px 5px 20px;
   background-position: bottom center;
@@ -127,11 +131,11 @@ button:focus {
   justify-content: center;
 }
 
-.header-top h3 {
+.header-bar h3 {
   font-size: 20px;
 }
 
-.header-top a {
+.header-bar a {
   background-color: var(--color-yellow);
   font-size: 14px;
   text-transform: uppercase;
@@ -140,5 +144,139 @@ button:focus {
   padding: 5px 10px 0px 10px;
   line-height: 2;
   margin: 10px 10px 10px 10px;
+  color: var(--color-black);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px 5px 20px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: var(--border-color);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  z-index: 100;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu li {
+  position: relative;
+}
+
+.header-menu li:hover .sub-menu {
+  display: block;
+}
+
+.header-menu li a {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-black);
+  padding: 18px 20px 13px;
+  display: block;
+  letter-spacing: 1.2px;
+}
+
+.header-menu > li .icon {
+  display: block;
+  height: 7px;
+  position: absolute;
+  pointer-events: none;
+  transform: rotate(-45deg);
+  width: 12px;
+  color: var(--color-black);
+  right: 0px;
+  top: calc(50% - 5px);
+}
+
+.header-menu > li .icon:before, .header-menu > li .icon:after {
+  content: "";
+  display: block;
+  background-color: currentColor;
+  position: absolute;
+  bottom: calc(50% - 1px);
+  left: 0;
+}
+
+.header-menu > li .icon:before {
+  height: 6px;
+  width: 1px;
+}
+
+.header-menu > li .icon:after {
+  height: 1px;
+  width: 6px;
+}
+
+.header-menu .sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 210px;
+  border: solid 1px var(--border-light-color);
+  box-shadow: 0px 0px 27px -17px rgb(0 0 0 / 50%);
+  background-color: var(--color-white);
+}
+
+.header-menu .sub-menu li {
+  border-bottom: solid 1px var(--border-color);
+}
+
+.header-menu .sub-menu li:last-child {
+  border: none;
+}
+
+.header-menu .sub-menu li a {
+  text-transform: capitalize;
+}
+
+.header-menu .sub-menu li a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.header-search-account-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-search {
+  max-width: 250px;
+  padding: 0 10px;
+}
+
+.header-search-form {
+  border-width: 1px 1px 1px 1px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-grey-pink);
+}
+
+.header-search-form i {
+  padding: 0 10px;
+  color: var(--color-light-black);
+  opacity: 0.5;
+}
+
+.header-search-form input {
+  background-color: var(--color-grey-pink);
+  border: none;
+  height: 33px;
+  padding: 0 10px;
+}
+
+.header-account,
+.header-cart {
+  padding: 0 10px;
+}
+
+.header-account a,
+.header-cart a {
   color: var(--color-black);
 }
