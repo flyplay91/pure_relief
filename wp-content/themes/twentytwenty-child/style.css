@@ -12,3 +12,133 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain: twentytwenty-child
 */
+
+@font-face {font-family: "GT-Super-Display-Bold";
+	src: url("assets/fonts/GT-Super-Display-Bold.eot"); /* IE9*/
+	src: url("assets/fonts/GT-Super-Display-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/GT-Super-Display-Bold.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/GT-Super-Display-Bold.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/GT-Super-Display-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iO.klaviyo-popup__innerS 4.2+*/
+	url("assets/fonts/GT-Super-Display-Bold.svg#GT-Super-Display-Bold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "GT-Super-Display-Light";
+	src: url("assets/fonts/GT-Super-Display-Light.eot"); /* IE9*/
+	src: url("assets/fonts/GT-Super-Display-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/GT-Super-Display-Light.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/GT-Super-Display-Light.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/GT-Super-Display-Light.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iO.klaviyo-popup__innerS 4.2+*/
+	url("assets/fonts/GT-Super-Display-Light.svg#GT-Super-Display-Light") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Sofia-Pro-Bold";
+	src: url("assets/fonts/Sofia-Pro-Bold.eot"); /* IE9*/
+	src: url("assets/fonts/Sofia-Pro-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/Sofia-Pro-Bold.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/Sofia-Pro-Bold.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/Sofia-Pro-Bold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iO.klaviyo-popup__innerS 4.2+*/
+	url("assets/fonts/Sofia-Pro-Bold.svg#Sofia-Pro-Bold") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Sofia-Pro-Regular";
+	src: url("assets/fonts/Sofia-Pro-Regular.eot"); /* IE9*/
+	src: url("assets/fonts/Sofia-Pro-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("assets/fonts/Sofia-Pro-Regular.woff2") format("woff2"), /* chrome、firefox */
+	url("assets/fonts/Sofia-Pro-Regular.woff") format("woff"), /* chrome、firefox */
+	url("assets/fonts/Sofia-Pro-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iO.klaviyo-popup__innerS 4.2+*/
+	url("assets/fonts/Sofia-Pro-Regular.svg#Sofia-Pro-Regular") format("svg"); /* iOS 4.1- */
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-light-pink: #EAE1E3;
+  --color-yellow: #EBC805;
+}
+
+
+
+/* Global Style */
+
+.inner-section-1366 {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
+.inner-section-1220 {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
+.inner-section-1120 {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 25px 15px;
+}
+
+body {
+  background-color: var(--color-white);
+  font-family: 'Sofia-Pro-Regular', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,label,p,li,ul, li > ul, li > ol {
+  margin: 0;
+}
+
+h1,h2,h3 {
+  font-family: 'GT-Super-Display-Bold', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+/* =================================================================== */
+/* ====================== Header Style =============================== */
+/* =================================================================== */
+.header-top {
+  background-color: var(--color-light-pink);
+  padding: 5px 20px 5px 20px;
+  background-position: bottom center;
+  background-size: cover;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #d6d6d6;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top h3 {
+  font-size: 20px;
+}
+
+.header-top a {
+  background-color: var(--color-yellow);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 6px 6px 6px 6px;
+  padding: 5px 10px 0px 10px;
+  line-height: 2;
+  margin: 10px 10px 10px 10px;
+  color: var(--color-black);
+}
