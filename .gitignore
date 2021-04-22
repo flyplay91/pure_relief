@@ -15,3 +15,4 @@ wp-content/cache/
 # .gitignore
 wp-admin/
 wp-includes/
+.htaccess
