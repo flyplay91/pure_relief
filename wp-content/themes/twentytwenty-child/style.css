@@ -59,6 +59,7 @@ Text Domain: twentytwenty-child
   --border-color: #D6D6D6;
   --border-light-color: #F0F0F0;
   --color-dark-black: #111111;
+  --color-blue: #009CF5;
 }
 
 
@@ -372,4 +373,127 @@ button:focus {
 
 .copyright-text p:last-child {
   margin-bottom: 0;
+}
+
+/* ====================================================================== */
+/* ============================ Home Page Style ========================= */
+/* ====================================================================== */
+.home-page .home-hero {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-light-pink);
+  display: flex;
+  align-items: center;
+}
+
+.home-page .home-hero__inner {
+  padding: 0 30px;
+}
+
+.home-page .home-hero-top {
+  display: grid;
+  grid-template-columns: 38% 60%;
+  grid-gap: 2%;
+}
+
+.home-page .home-hero-top-left h1 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.home-page .home-hero-top-left p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.home-page .home-hero-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-page .home-hero-btns a {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: var( --color-black );
+  background-color: var( --color-yellow );
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 0px 10px 10px -10px rgb(0 0 0 / 20%);
+  padding: 3px 15px 0px 15px;
+  margin-right: 20px;
+}
+
+.home-page .home-hero-top-right {
+  position: relative;
+}
+
+.home-page .home-hero-top-right a {
+  display: block;
+  position: absolute;
+  background-color: var(--color-blue);
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 100px 100px 100px 100px;
+  padding: 40px 23px;
+  color: var(--color-white);
+}
+
+.home-page .home-hero-top-right a:hover {
+  transform: scale(0.9);
+  color: var(--color-black);
+}
+
+
+
+.home-page .home-hero-top-right a span {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-page .home-hero-top-right a span s {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+}
+
+.home-page .home-hero-top-right a span b {
+  font-size: 30px;
+  font-style: italic;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+}
+
+.home-page .home-hero-top-right a:nth-child(2) {
+  top: 2px;
+  left: 239px;
+}
+
+.home-page .home-hero-top-right a:last-child {
+  top: 2px;
+  left: 712px;
+}
+
+.home-page .home-hero-bottom {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home-page .home-hero-bottom p {
+  color: var(--color-light-black);
+}
+
+.home-page .home-hero-bottom p:first-child {
+  font-size: 16px;
+}
+
+.home-page .home-hero-bottom p:last-child {
+  font-size: 18px;
 }
