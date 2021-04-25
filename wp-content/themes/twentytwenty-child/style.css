@@ -65,21 +65,14 @@ Text Domain: twentytwenty-child
 
 
 /* Global Style */
-
-.inner-section-1366 {
-  max-width: 1366px;
+.inner-section-1470 {
+  max-width: 1470px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .inner-section-1220 {
   max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.inner-section-1120 {
-  max-width: 1120px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -496,4 +489,20 @@ button:focus {
 
 .home-page .home-hero-bottom p:last-child {
   font-size: 18px;
+}
+
+.home-page .home-brands {
+  padding: 35px 0;
+  text-align: center;
+}
+
+.home-page .home-brands h1 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.home-page .home-brand-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }

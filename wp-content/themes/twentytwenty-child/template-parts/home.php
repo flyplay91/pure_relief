@@ -61,6 +61,28 @@ get_header();
         </section>
         <?php endwhile;
     endif; ?>
+
+    <?php if( have_rows('brands_group')) :
+        $home_brands_group = get_field('brands_group');
+        $home_brands_title = $home_brands_group['title'];
+        while ( have_rows('brands_group')): the_row(); ?>
+        <section class="home-brands">
+            <div class="home-brands__inner inner-section-1470">
+                <h1><?php echo $home_brands_title ?></h1>
+                <div class="home-brand-items">
+                    <?php if( have_rows('brands_repeater') ) :
+                        while( have_rows('brands_repeater') ) : the_row();
+                        $brand_img_url = get_sub_field('brand_image')['url'];
+                        $brand_img_alt = get_sub_field('brand_image')['alt'];
+                    ?>
+                        <img src="<?php echo $brand_img_url ?>" alt="<?php echo $brand_img_alt ?>">
+                    <?php endwhile;
+                endif; ?>
+                </div>
+            </div>
+        </section>
+        <?php endwhile;
+    endif; ?>
 </main>
 
 <?php get_footer(); ?>
