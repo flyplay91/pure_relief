@@ -24,7 +24,7 @@ $copyrighter_text = get_field('copyrighter_text', 'option');
 				<div class="footer-newsletter"></div>
 
 				<div class="footer-nav">
-					<div class="inner-section-1120 footer-nav__inner">
+					<div class="inner-section-1150 footer-nav__inner">
 						<div class="footer-contact">
 							<h2>Email Us</h2>
 							<?php if ($email_address) : ?>
@@ -63,7 +63,7 @@ $copyrighter_text = get_field('copyrighter_text', 'option');
 				</div>
 
 				<div class="footer-copyright">
-					<div class="inner-section-1220 footer-copyright__inner">
+					<div class="inner-section-1250 footer-copyright__inner">
 						<hr>
 						<div class="copyright-text">
 							<p><?php echo $description_text ?></p>

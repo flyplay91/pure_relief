@@ -83,6 +83,140 @@ get_header();
         </section>
         <?php endwhile;
     endif; ?>
+
+    <section class="home-reviews"></section>
+
+    <section class="home-products">
+        <div class="home-products__inner inner-section-1310">
+            <h1>The Purest CBD from Organic Hemp Extracts</h1>
+            <h2>Popular Products On Sale</h2>
+            <div class="home-product-items">
+                <div class="home-product-item">
+                    <a href="">
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
+                        <h3>10 PACK – Relief Rolls *NEW</h3>
+                        <div class="home-product-price">
+                            <label>$129.99</label>
+                            <span>$113.99</span>
+                        </div>
+                        <a class="btn-shop" href="">Shop Now</a>
+                    </a>
+                </div>
+                <div class="home-product-item">
+                    <a href="">
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
+                        <h3>10 PACK – Relief Rolls *NEW</h3>
+                        <div class="home-product-price">
+                            <label>$129.99</label>
+                            <span>$113.99</span>
+                        </div>
+                        <a class="btn-shop" href="">Shop Now</a>
+                    </a>
+                </div>
+                <div class="home-product-item">
+                    <a href="">
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
+                        <h3>10 PACK – Relief Rolls *NEW</h3>
+                        <div class="home-product-price">
+                            <label>$129.99</label>
+                            <span>$113.99</span>
+                        </div>
+                        <a class="btn-shop" href="">Shop Now</a>
+                    </a>
+                </div>
+                <div class="home-product-item">
+                    <a href="">
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
+                        <h3>10 PACK – Relief Rolls *NEW</h3>
+                        <div class="home-product-price">
+                            <label>$129.99</label>
+                            <span>$113.99</span>
+                        </div>
+                        <a class="btn-shop" href="">Shop Now</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-collections">
+        <div class="home-collections__inner inner-section-1470">
+            <h1>Popular Collections</h1>
+            <label>Browse our collection to discover the perfect CBD product for you.</label>
+            <div class="home-collections-items">
+                <div class="home-collection-item">
+                    <a href="">
+                        <div class="home-collection-img">
+                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
+                        </div>
+                        <div class="home-collection-content">
+                            <h3>CBD Smokeables</h3>
+                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-collection-item">
+                    <a href="">
+                        <div class="home-collection-img">
+                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
+                        </div>
+                        <div class="home-collection-content">
+                            <h3>CBD Smokeables</h3>
+                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-collection-item">
+                    <a href="">
+                        <div class="home-collection-img">
+                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
+                        </div>
+                        <div class="home-collection-content">
+                            <h3>CBD Smokeables</h3>
+                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="home-collection-item">
+                    <a href="">
+                        <div class="home-collection-img">
+                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
+                        </div>
+                        <div class="home-collection-content">
+                            <h3>CBD Smokeables</h3>
+                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <?php if( have_rows('what_group')) :
+        $home_what_group = get_field('what_group');
+        $home_what_img_url = $home_what_group['background_image']['url'];
+        $home_what_img_alt = $home_what_group['background_image']['alt'];
+        $home_what_title = $home_what_group['title'];
+        $home_what_text = $home_what_group['text'];
+        $home_what_button_title = $home_what_group['button_title'];
+        $home_what_button_link = $home_what_group['button_link'];
+        while ( have_rows('what_group')): the_row(); ?>
+        <section class="home-what" style="background-image: url(<?php echo $home_what_img_url ?>)">
+            <div class="home-what__inner">
+                <div></div>
+                <div class="home-what-content">
+                    <h2><?php echo $home_what_title ?></h2>
+                    <p><?php echo $home_what_text ?></p>
+                    <a href="<?php echo $home_what_button_link ?>"><?php echo $home_what_button_title ?></a>
+                </div>
+            </div>
+        </section>
+        <?php endwhile;
+    endif; ?>
 </main>
 
 <?php get_footer(); ?>
