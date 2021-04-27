@@ -86,8 +86,8 @@ Text Domain: twentytwenty-child
   padding: 0 15px;
 }
 
-.inner-section-1150 {
-  max-width: 1150px;
+.inner-section-1170 {
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -731,4 +731,179 @@ button:focus {
   transform: scale(0.9);
   background-color: var(--color-yellow);
   color: var(--color-black);
+}
+
+/* ====================================================================== */
+/* ============================ Product Page Style ====================== */
+/* ====================================================================== */
+.product-img-summary {
+  padding: 80px 1.5rem 30px;
+}
+
+.product-img-summary__inner {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images,
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+.product-summary h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.product-summary .price {
+  font-size: 25px;
+}
+
+.product-about h2 {
+  font-size: 40px;
+}
+
+.product-about-texts {
+  padding: 30px 30px 50px 30px;
+}
+
+.product-about-text {
+  margin-bottom: 30px;
+}
+
+.product-about-text:last-child {
+  margin-bottom: 0;
+}
+
+.product-about-text h3 {
+  font-size: 30px;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-about-text p {
+  font-size: 18px;
+}
+
+.product-about-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.product-about-img {
+  width: 100%;
+}
+
+.product-instructions {
+  margin-top: 50px;
+}
+
+.product-instructions h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.product-instructions p,
+.product-instructions ul li {
+  font-size: 18px;
+}
+
+.product-ingredients-facts {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.product-ingredients-facts > div {
+  padding: 10px;
+}
+
+.product-ingredients-facts h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.product-ingredients-facts-text {
+  padding: 10px;
+}
+
+.product-ingredients-facts-text label,
+.product-ingredients-facts-text p {
+  font-size: 18px;
+}
+
+.product-ingredients-facts-text ul li {
+  margin-bottom: 20px;
+}
+
+.product-ingredients-facts-text ul li:last-child {
+  margin-bottom: 0;
+}
+
+.product-recommendation {
+  padding: 50px 0;
+}
+
+.product-recommendation__inner > h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-recommendation-items {
+  grid-template-columns: repeat(4,1fr);
+  display: grid;
+  grid-gap: 20px;
+}
+
+.product-recommendation-item {
+  border: solid 1px #ecf0f2;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.product-recommendation-item a {
+  color: black;
+  display: block;
+}
+
+.product-recommendation-item a h3 {
+  font-size: 16px;
+  margin: 30px 15px 20px;
+  text-align: center;
+}
+
+.recommendation-price {
+  text-align: center;
+}
+
+.recommendation-price span {
+  font-size: 25px;
+  opacity: .5;
+  text-decoration: line-through;
+}
+
+.recommendation-price label {
+  font-size: 25px;
+}
+
+.btn-recommendation-shop {
+  background-color: #FAE70C;
+  border: solid 1px #FAE70C;
+  font-size: 18px;
+  padding: 7px 20px 7px 20px;
+  border-radius: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-recommendation-shop:hover {
+  background-color: transparent;
 }
