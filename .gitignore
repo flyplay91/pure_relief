@@ -6,6 +6,7 @@ wp-content/uploads/
 wp-content/upgrade/*
 wp-content/updraft/*
 wp-content/themes/twentytwenty/konnektive-import-errors.log
+wp-content/breeze-config/breeze-config.php
 wp-content/advacned-cache.php
 wp-content/cache/*
 wp-content/mu-plugins/
