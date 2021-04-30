@@ -961,6 +961,22 @@ button:focus {
   font-size: 18px;
 }
 
+.category-hero-text a {
+  color: var(--color-bright-black);
+  background-color: var(--color-light-yellow);
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px 20px 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.category-hero-text a:hover {
+  background-color: var(--color-yellow);
+}
+
 .category-products-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
