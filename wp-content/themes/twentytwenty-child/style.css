@@ -556,11 +556,19 @@ button:focus {
 .home-page .home-product-item {
   background-color: var(--color-white);
   padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .home-page .home-product-item a {
   display: block;
   color: var(--color-black);
+}
+
+.home-page .home-product-item a img {
+  height: 400px;
+  object-fit: cover;
 }
 
 .home-page .home-product-item h3 {
