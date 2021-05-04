@@ -128,65 +128,46 @@ get_header();
                     </div>
                 </div>
             </section>
-            <?php endwhile;
+        <?php endwhile;
     endif; ?>
 
-    <section class="home-collections">
-        <div class="home-collections__inner inner-section-1470">
-            <h1>Popular Collections</h1>
-            <label>Browse our collection to discover the perfect CBD product for you.</label>
-            <div class="home-collections-items">
-                <div class="home-collection-item">
-                    <a href="">
-                        <div class="home-collection-img">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
-                        </div>
-                        <div class="home-collection-content">
-                            <h3>CBD Smokeables</h3>
-                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
-                            <span>Shop Now</span>
-                        </div>
-                    </a>
+    <?php if( have_rows('category_group')) :
+        $home_category_group = get_field('category_group');
+        $home_category_heading = $home_category_group['heading'];
+        $home_category_subheading = $home_category_group['sub_heading'];
+        while ( have_rows('category_group')): the_row(); ?>
+            <section class="home-collections">
+                <div class="home-collections__inner inner-section-1470">
+                    <h1><?php echo $home_category_heading ?></h1>
+                    <label><?php echo $home_category_subheading ?></label>
+                    <div class="home-collections-items">
+                        <?php if( have_rows('category_repeater') ) :
+                            while( have_rows('category_repeater') ) : the_row();
+                            $category_link = get_sub_field('link');
+                            $category_img_url = get_sub_field('image')['url'];
+                            $category_img_alt = get_sub_field('image')['alt'];
+                            $category_title = get_sub_field('title');
+                            $category_text = get_sub_field('text');
+                            ?>
+                            <div class="home-collection-item">
+                                <a href="<?php echo $category_link ?>">
+                                    <div class="home-collection-img">
+                                        <img src="<?php echo $category_img_url ?>" alt="<?php echo $category_img_alt ?>">
+                                    </div>
+                                    <div class="home-collection-content">
+                                        <h3><?php echo $category_title ?></h3>
+                                        <p><?php echo $category_text ?></p>
+                                        <span>Shop Now</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <?php endwhile;
+                        endif; ?>
+                    </div>
                 </div>
-                <div class="home-collection-item">
-                    <a href="">
-                        <div class="home-collection-img">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
-                        </div>
-                        <div class="home-collection-content">
-                            <h3>CBD Smokeables</h3>
-                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
-                            <span>Shop Now</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="home-collection-item">
-                    <a href="">
-                        <div class="home-collection-img">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
-                        </div>
-                        <div class="home-collection-content">
-                            <h3>CBD Smokeables</h3>
-                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
-                            <span>Shop Now</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="home-collection-item">
-                    <a href="">
-                        <div class="home-collection-img">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-category.jpg">
-                        </div>
-                        <div class="home-collection-content">
-                            <h3>CBD Smokeables</h3>
-                            <p>Our signature CBD Smokeables products are perfect for those wanting to experience CBD in its most natural state.</p>
-                            <span>Shop Now</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        <?php endwhile;
+    endif; ?>
 
     <?php if( have_rows('what_group')) :
         $home_what_group = get_field('what_group');
