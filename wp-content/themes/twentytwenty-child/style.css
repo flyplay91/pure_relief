@@ -567,8 +567,8 @@ button:focus {
 }
 
 .home-page .home-product-item a img {
-  height: 400px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
 }
 
 .home-page .home-product-item h3 {
