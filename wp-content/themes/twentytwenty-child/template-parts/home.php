@@ -86,58 +86,50 @@ get_header();
 
     <section class="home-reviews"></section>
 
-    <section class="home-products">
-        <div class="home-products__inner inner-section-1310">
-            <h1>The Purest CBD from Organic Hemp Extracts</h1>
-            <h2>Popular Products On Sale</h2>
-            <div class="home-product-items">
-                <div class="home-product-item">
-                    <a href="">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
-                        <h3>10 PACK – Relief Rolls *NEW</h3>
-                        <div class="home-product-price">
-                            <label>$129.99</label>
-                            <span>$113.99</span>
-                        </div>
-                        <a class="btn-shop" href="">Shop Now</a>
-                    </a>
+    <?php if( have_rows('product_group')) :
+        $home_product_group = get_field('product_group');
+        $home_product_heading = $home_product_group['heading'];
+        $home_product_subheading = $home_product_group['sub_heading'];
+        while ( have_rows('product_group')): the_row(); ?>
+            <section class="home-products">
+                <div class="home-products__inner inner-section-1310">
+                    <h1><?php echo $home_product_heading ?></h1>
+                    <h2><?php echo $home_product_subheading ?></h2>
+                    <div class="home-product-items">
+                        <?php if( have_rows('product_repeater') ) :
+                            while( have_rows('product_repeater') ) : the_row();
+                            $product_obj = get_sub_field('product_item');
+                            $product_id = $product_obj->ID;
+                            $product = wc_get_product($product_id);
+                            $product_url = get_permalink( $product_id );
+                            $product_image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );
+                            $product_title = get_the_title($product_id);
+                            $product_regular_price = $product->get_regular_price();
+                            $product_sale_price = $product->get_sale_price();
+                            $product_price = $product->get_price();
+                        ?>
+                            <div class="home-product-item">
+                                <a href="<?php echo $product_url ?>">
+                                    <img src="<?php  echo $product_image[0]; ?>">
+                                    <h3><?php echo $product_title ?></h3>
+                                    <div class="home-product-price">
+                                        <?php if ($product_sale_price): ?> 
+                                            <label><?php echo $product_regular_price ?></label>
+                                            <span><?php echo $product_sale_price ?></span>
+                                        <?php else: ?>
+                                            <span><?php echo $product_price ?></span>
+                                        <?php endif; ?>
+                                    </div>
+                                    <a class="btn-shop" href="<?php echo $product_url ?>">Shop Now</a>
+                                </a>
+                            </div>
+                            <?php endwhile;
+                        endif; ?>
+                    </div>
                 </div>
-                <div class="home-product-item">
-                    <a href="">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
-                        <h3>10 PACK – Relief Rolls *NEW</h3>
-                        <div class="home-product-price">
-                            <label>$129.99</label>
-                            <span>$113.99</span>
-                        </div>
-                        <a class="btn-shop" href="">Shop Now</a>
-                    </a>
-                </div>
-                <div class="home-product-item">
-                    <a href="">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
-                        <h3>10 PACK – Relief Rolls *NEW</h3>
-                        <div class="home-product-price">
-                            <label>$129.99</label>
-                            <span>$113.99</span>
-                        </div>
-                        <a class="btn-shop" href="">Shop Now</a>
-                    </a>
-                </div>
-                <div class="home-product-item">
-                    <a href="">
-                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/test-product.jpg">
-                        <h3>10 PACK – Relief Rolls *NEW</h3>
-                        <div class="home-product-price">
-                            <label>$129.99</label>
-                            <span>$113.99</span>
-                        </div>
-                        <a class="btn-shop" href="">Shop Now</a>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+            <?php endwhile;
+    endif; ?>
 
     <section class="home-collections">
         <div class="home-collections__inner inner-section-1470">
