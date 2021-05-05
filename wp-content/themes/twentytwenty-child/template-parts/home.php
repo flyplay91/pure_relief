@@ -101,24 +101,44 @@ get_header();
                             $product_obj = get_sub_field('product_item');
                             $product_id = $product_obj->ID;
                             $product = wc_get_product($product_id);
+                            $product_type = $product->get_type();
                             $product_url = get_permalink( $product_id );
                             $product_image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );
                             $product_title = get_the_title($product_id);
                             $product_regular_price = $product->get_regular_price();
                             $product_sale_price = $product->get_sale_price();
                             $product_price = $product->get_price();
+                            $sale_badge = false;
+                            if ($product_type == "variable") {
+                                $product_available_variations = $product->get_available_variations();
+                                $from_product_price = $product_available_variations[0]['display_regular_price'];
+                                $to_product_price = $product_available_variations[0]['display_price'];
+                                $productPrice = '<label>' . $from_product_price . '</label><span>' . $to_product_price . '</span>';
+
+                                if ($from_product_price > $to_product_price) {
+                                    $sale_badge = true;
+                                }
+
+                            } else {
+                                if (($product_sale_price != null) && ($product_regular_price > $product_sale_price)) {
+                                    $productPrice = '<label>'.$product_regular_price.'</label><span>'.$product_sale_price.'</span>';
+                                    $sale_badge = true;
+                                } else {
+                                    $productPrice = $product_price;
+                                }
+                            }
                         ?>
                             <div class="home-product-item">
                                 <a href="<?php echo $product_url ?>">
+                                    <?php if ($sale_badge == true) { ?>
+                                        <span class="onsale">Sale!</span>
+                                    <?php
+                                    } ?>
+                                    
                                     <img src="<?php  echo $product_image[0]; ?>">
                                     <h3><?php echo $product_title ?></h3>
                                     <div class="home-product-price">
-                                        <?php if ($product_sale_price): ?> 
-                                            <label><?php echo $product_regular_price ?></label>
-                                            <span><?php echo $product_sale_price ?></span>
-                                        <?php else: ?>
-                                            <span><?php echo $product_price ?></span>
-                                        <?php endif; ?>
+                                        <?php echo $productPrice ?>                                        
                                     </div>
                                     <a class="btn-shop" href="<?php echo $product_url ?>">Shop Now</a>
                                 </a>

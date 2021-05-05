@@ -67,6 +67,7 @@ Text Domain: twentytwenty-child
   --color-blue: #009CF5;
   --color-light-orange: #F5EBE3;
   --color-bright-organe: #F6E3D5;
+  --color-green: #0DBC00;
 }
 
 
@@ -559,6 +560,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .home-page .home-product-item a {
@@ -1049,7 +1051,7 @@ button:focus {
 }
 
 .onsale {
-  background-color: var(--color-blue);
+  background-color: var(--color-green);
   width: 55px;
   height: 55px;
   font-size: 13px !important;
