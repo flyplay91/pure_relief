@@ -209,6 +209,66 @@
                     "new_lines": ""
                 }
             ]
+        },
+        {
+            "key": "field_6093e1e711b58",
+            "label": "Related Product Group",
+            "name": "related_product_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6093e20111b59",
+                    "label": "Product Repeater",
+                    "name": "product_repeater",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_6093e20f11b5a",
+                            "label": "Product Item",
+                            "name": "product_item",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "product"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "location": [
@@ -228,5 +288,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1619510113
+    "modified": 1620304633
 }
