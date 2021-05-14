@@ -1207,3 +1207,19 @@ button:focus {
 .woocommerce-cart .wc-proceed-to-checkout .checkout-button:hover {
   background-color: var(--color-white);
 }
+
+.woocommerce-cart #site-content .woocommerce {
+  margin: 0 auto 50px;
+}
+
+.restore-item {
+  color: #02a6e3;
+}
+
+.button.wc-backward {
+  background-color: #FAE70C;
+}
+
+.woocommerce-info {
+  border-top: 2px solid var(--color-black);
+}
