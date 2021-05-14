@@ -21,9 +21,12 @@
   'disable_per_adminuser' => '1',
   'exclude_url' => 
   array (
-    0 => '/index.php/cart/*',
-    1 => '/index.php/checkout/*',
-    2 => '/index.php/my-account/*',
+    0 => '/cart/*',
+    1 => '/checkout/*',
+    2 => '/my-account/*',
   ),
+  'enabled-lazy-load' => 0,
+  'use-lazy-load-native' => 0,
+  'breeze-preload-links' => 0,
 ); 
 

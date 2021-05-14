@@ -1129,3 +1129,81 @@ button:focus {
   font-size: 18px;
 }
 
+/* ====================================================================== */
+/* =========================== Cart Page Style ========================== */
+/* ====================================================================== */
+
+.woocommerce-cart .entry-header {
+  display: none;
+}
+
+.woocommerce-cart .shop_table {
+  border: 1px solid #ebebeb;
+  border-radius: 0;
+}
+
+.woocommerce-cart .shop_table thead {
+  background-color: #fbfbfb;
+}
+
+.woocommerce-cart a.remove {
+  width: 24px;
+  height: 24px;
+  color: #ccc;
+  border: 1px solid #ccc;
+  line-height: 21px;
+}
+
+.woocommerce-cart .product-name a {
+  color: var(--color-blue);
+  font-weight: bold;
+}
+
+.woocommerce-cart .product-price,
+.woocommerce-cart .product-subtotal {
+  font-weight: bold;
+}
+
+.woocommerce-cart form input[type=number].qty {
+  border-color: #f2f1f1;
+  background: #fafafa;
+  padding: 1rem;
+}
+
+.woocommerce-cart .coupon input {
+  padding: .5em .75em !important;
+}
+
+.woocommerce-cart .coupon button {
+  min-width: 150px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 40px;
+  padding: 0;
+  margin-left: 5px;
+  background-color: #111111 !important;
+  color: white !important;
+}
+
+.woocommerce-cart .button {
+  border-radius: 40px;
+  font-size: 14px !important;
+  height: 40px;
+  line-height: 38px;
+  min-width: 150px;
+  padding: 0 !important;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout .checkout-button {
+  background-color: #FAE70C;
+  border: solid 1px #FAE70C;
+  color: #111;
+  font-weight: bold;
+  height: 45px;
+  line-height: 45px;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout .checkout-button:hover {
+  background-color: var(--color-white);
+}
