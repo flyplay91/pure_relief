@@ -295,6 +295,22 @@ button:focus {
 .header-account a,
 .header-cart a {
   color: var(--color-black);
+  position: relative;
+}
+
+.header-cart a span {
+  background-color: var(--color-yellow);
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 50%;
 }
 
 /* ====================================================================== */
