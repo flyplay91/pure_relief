@@ -298,7 +298,7 @@ button:focus {
   position: relative;
 }
 
-.header-cart a span {
+.header-cart a label {
   background-color: var(--color-yellow);
   position: absolute;
   top: -12px;

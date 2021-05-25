@@ -114,7 +114,7 @@
 						<a href="/cart/">
 							<?php $cart_count = WC()->cart->get_cart_contents_count(); ?>
 							<i class="fas fa-shopping-cart"></i>
-							<span data-cart-total="<?php echo $cart_count ?>"><?php echo $cart_count ?></span>
+							<label><?php echo $cart_count ?></label>
 						</a>
 					</div>
 				</div>
