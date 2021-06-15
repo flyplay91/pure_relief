@@ -1,5 +1,61 @@
-$(document).ready(function() {
+jQuery(document).on('swell:setup', function () {
+  var customerDetails = swellAPI.getCustomerDetails();
 
+  var customerDetails2;
+
+  jQuery.get('https://app.swellrewards.com/api/v2/customers?customer_email=' + customerDetails.email + '&with_referral_code=true&with_history=true&guid=XKnEIZ_Zv_EdmsvT3vl0KA&api_key=7rJyYF0UuEQ1T4mRddaXKgtt', function (data) {
+    customerDetails2 = JSON.parse(data);
+
+    let $section = $('.rewards-page .section.balance');
+    if ($section.length == 1) {
+      $section.find(".point-balance").html(customerDetails2.points_balance);
+      $section.removeClass('hidden');
+    }
+    
+  }, 'text');
+});
+
+
+$(document).ready(function () {
+
+  /* let timer = setInterval(() => {
+    // get points from swellapi
+    if (typeof swellAPI !== 'undefined') {
+      let $section = $('.rewards-page .section.balance');
+      if ($section.length == 1) {
+        $section.find(".point-balance").html(swellAPI.getCustomerDetails().pointsBalance);
+        $section.removeClass('hidden');
+      }
+      clearInterval(timer);
+    }
+  }, 100); */
+
+  
+  $('.rewards-page .vips-carousel').length && $('.rewards-page .vips-carousel').slick({
+    infinite: true,
+    dots: false,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
 });
 
@@ -21,8 +77,6 @@ document.addEventListener('scroll', function(e) {
     ticking = true;
   }
 });
-
-
 
 function processAnim(scrollPos) {
   let elements = document.querySelectorAll('.anim');
