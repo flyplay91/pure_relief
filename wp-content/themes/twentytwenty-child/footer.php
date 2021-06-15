@@ -75,5 +75,8 @@ $copyrighter_text = get_field('copyrighter_text', 'option');
 
 		<?php wp_footer(); ?>
 
+		<!-- Yotpo Reviews -->
+			<script src='//staticw2.yotpo.com/YVkPWsKyByHFMKHTDmPNDuH9WRB5YPRj9FsF13o5/widget.js' id='yotpo_widget-js'></script>
+		<!-- End Yotpo Reviews -->
 	</body>
 </html>

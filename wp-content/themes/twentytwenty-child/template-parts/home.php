@@ -12,55 +12,15 @@ get_header();
 ?>
 
 <main class="home-page">
-    <?php if( have_rows('hero_group')) : 
-        $hero_group = get_field('hero_group');
-        $hero_bg_img_url = $hero_group['background_image']['url'];
-        $hero_bg_img_alt = $hero_group['background_image']['alt'];
-        $hero_title = $hero_group['title'];
-        $hero_description = $hero_group['description'];
-        $hero_button_1_title = $hero_group['button_1_title'];
-        $hero_button_1_link = $hero_group['button_1_link'];
-        $hero_button_2_title = $hero_group['button_2_title'];
-        $hero_button_2_link = $hero_group['button_2_link'];
-        $hero_product_img_url = $hero_group['product_image']['url'];
-        $hero_product_img_alt = $hero_group['product_image']['alt'];
-        $hero_price_1_title = $hero_group['price_1_title'];
-        $hero_price_1_link = $hero_group['price_1_link'];
-        $hero_price_2_title = $hero_group['price_2_title'];
-        $hero_price_2_link = $hero_group['price_2_link'];
-        $hero_promotion_text = $hero_group['promotion_text'];
-        $hero_disclaimer_text = $hero_group['disclaimer_text'];
-        ?>
-        <?php while ( have_rows('hero_group')): the_row(); ?>
-        <section class="home-hero" style="background-image: url(<?php echo $hero_bg_img_url ?>);">
-            <div class="home-hero__inner">
-                <div class="home-hero-top">
-                    <div class="home-hero-top-left">
-                        <h1><?php echo $hero_title ?></h1>
-                        <p><?php echo $hero_description ?></p>
-                        <div class="home-hero-btns">
-                            <a href="<?php echo $hero_button_1_link ?>"><?php echo $hero_button_1_title ?></a>
-                            <a href="<?php echo $hero_button_2_link ?>"><?php echo $hero_button_2_title ?></a>
-                        </div>
-                    </div>
-                    <div class="home-hero-top-right">
-                        <img src="<?php echo $hero_product_img_url ?>" alt="<?php echo $hero_product_img_alt ?>">
-                        <a href="<?php echo $hero_price_1_link ?>">
-                            <span><?php echo $hero_price_1_title ?></span>
-                        </a>
-                        <a href="<?php echo $hero_price_2_link ?>">
-                            <span><?php echo $hero_price_2_title ?></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="home-hero-bottom">
-                    <p><?php echo $hero_promotion_text ?></p>
-                    <p><?php echo $hero_disclaimer_text ?></p>
-                </div>
-            </div>
-        </section>
-        <?php endwhile;
-    endif; ?>
+
+<!---- Start Static Homepage Hero -->
+    <?php get_template_part( 'template-parts/homepage-hero-style1' ); ?>
+<!---- End Static Homepage Hero -->
+    
+<!---- Start Homepage Hero - Rev Slider -->
+<?php //get_template_part( 'template-parts/home-hero-slider' ); ?>
+
+<!---- End Homepage Hero - Rev Slider -->
 
     <?php if( have_rows('brands_group')) :
         $home_brands_group = get_field('brands_group');
@@ -84,7 +44,22 @@ get_header();
         <?php endwhile;
     endif; ?>
 
-    <section class="home-reviews"></section>
+    <section class="home-reviews">
+
+        <h3>Our Happy Customers</h3>
+
+        <div style="min-height:400px;" class="yotpo yotpo-reviews-carousel" 
+            data-background-color="transparent" 
+            data-mode="top_rated" 
+            data-type="both" 
+            data-count="9" 
+            data-show-bottomline="1" 
+            data-autoplay-enabled="1" 
+            data-autoplay-speed="3000" 
+            data-show-navigation="1">&nbsp;
+        </div>
+
+    </section>
 
     <?php if( have_rows('product_group')) :
         $home_product_group = get_field('product_group');
@@ -113,7 +88,7 @@ get_header();
                                 $product_available_variations = $product->get_available_variations();
                                 $from_product_price = $product_available_variations[0]['display_regular_price'];
                                 $to_product_price = $product_available_variations[0]['display_price'];
-                                $productPrice = '<label>' . $from_product_price . '</label><span>' . $to_product_price . '</span>';
+                                $productPrice = '<label>$' . $from_product_price . '</label><span>$' . $to_product_price . '</span>';
 
                                 if ($from_product_price > $to_product_price) {
                                     $sale_badge = true;
@@ -121,7 +96,7 @@ get_header();
 
                             } else {
                                 if (($product_sale_price != null) && ($product_regular_price > $product_sale_price)) {
-                                    $productPrice = '<label>'.$product_regular_price.'</label><span>'.$product_sale_price.'</span>';
+                                    $productPrice = '<label>$'.$product_regular_price.'</label> <span>$'.$product_sale_price.'</span>';
                                     $sale_badge = true;
                                 } else {
                                     $productPrice = $product_price;

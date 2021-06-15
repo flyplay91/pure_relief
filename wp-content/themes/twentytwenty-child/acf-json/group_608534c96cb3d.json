@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_608534d484a00",
-            "label": "Hero Group",
+            "label": "Hero Section",
             "name": "hero_group",
             "type": "group",
             "instructions": "",
@@ -18,35 +18,11 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_608534e184a01",
-                    "label": "Background Image",
-                    "name": "background_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_608534ed84a02",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_60be5b498be33",
+                    "label": "Desktop Slider",
+                    "name": "desktop_slider",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "enter slider alias only\r\nex: fathersdayslider-desktop",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -61,209 +37,11 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_608534fa84a03",
-                    "label": "Description",
-                    "name": "description",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_6085350984a04",
-                    "label": "Button 1 Title",
-                    "name": "button_1_title",
+                    "key": "field_60be5b7f8be34",
+                    "label": "Mobile Slider",
+                    "name": "mobile_slider",
                     "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6085351684a05",
-                    "label": "Button 1 Link",
-                    "name": "button_1_link",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url"
-                },
-                {
-                    "key": "field_6085351e84a06",
-                    "label": "Button 2 Title",
-                    "name": "button_2_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6085352484a07",
-                    "label": "Button 2 Link",
-                    "name": "button_2_link",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url"
-                },
-                {
-                    "key": "field_6085354384a08",
-                    "label": "Product Image",
-                    "name": "product_image",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "full",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_6085355884a09",
-                    "label": "Price 1 Title",
-                    "name": "price_1_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6085355f84a0a",
-                    "label": "Price 1 Link",
-                    "name": "price_1_link",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url"
-                },
-                {
-                    "key": "field_6085356784a0b",
-                    "label": "Price 2 Title",
-                    "name": "price_2_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6085357484a0c",
-                    "label": "Price 2 Link",
-                    "name": "price_2_link",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url"
-                },
-                {
-                    "key": "field_6085358884a0d",
-                    "label": "Promotion Text",
-                    "name": "promotion_text",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_608535a084a0e",
-                    "label": "Disclaimer Text",
-                    "name": "disclaimer_text",
-                    "type": "text",
-                    "instructions": "",
+                    "instructions": "enter slider alias only\r\nex: fathersdayslider-mobile",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -742,5 +520,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620147078
+    "modified": 1623088055
 }

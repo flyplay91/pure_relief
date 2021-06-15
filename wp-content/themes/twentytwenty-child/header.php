@@ -29,6 +29,19 @@
 
 		<?php wp_head(); ?>
 
+		<!-- Start WKND tag. Deploy at the beginning of document head. -->
+		<script>
+			(function(d) {
+				var e = d.createElement('script');
+				e.src = d.location.protocol + '//tag.wknd.ai/4221/i.js';
+				e.async = true;
+				d.getElementsByTagName("head")[0].appendChild(e);
+			}(document));
+		</script>
+		<!-- End WKND tag -->
+
+		
+
 	</head>
 
 	<?php 
@@ -45,22 +58,25 @@
 	?>
 
 	<body <?php body_class(); ?>>
+	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+		
 		<header class="site-header">
-			<div class="header-bar" style="background-image: url(<?php echo $announcebar_img_url ?>)">
-				<?php if ($announcebar_title) : ?>
-					<h3><?php echo $announcebar_title ?></h3>
-				<?php endif; ?>
-				<?php if ($announcebar_button_1_text): ?>
-					<a href="<?php echo $announcebar_button_1_link ?>"><?php echo $announcebar_button_1_text ?></a>
-				<?php endif; ?>
-				<?php if ($announcebar_button_2_text): ?>
-					<a href="<?php echo $announcebar_button_2_link ?>"><?php echo $announcebar_button_2_text ?></a>
-					<?php endif; ?>
-			</div>
+
+		
+			
+		<?php //get_template_part( 'template-parts/announcement-bar-style1' ); ?>
+
+		<?php get_template_part( 'template-parts/announcement-bar-style2' ); ?>
+
+		<?php //get_template_part( 'template-parts/announcement-bar-style3' ); ?>
+
+		<?php //get_template_part( 'template-parts/announcement-bar-style4' ); ?>
+
+
 
 			<div class="header-nav">
 				<div class="header-logo">
-					<a href="/">
+					<a href="/" title="Home">
 						<?php if ($logo_img) : ?>
 							<img src="<?php echo $logo_img ?>" alt="<?php echo $logo_alt ?>">
 						<?php else : ?>
