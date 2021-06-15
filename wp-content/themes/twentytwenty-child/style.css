@@ -2390,7 +2390,7 @@ box-shadow: 0px 0px 13px -4px #000000;
 }
 .home-reviews h3 {
   text-align:center;
-=======
+}
 
 /* Refer A Friend page */
 .refer-friend-page .section.hero .section-title {
@@ -2540,5 +2540,4 @@ ul.swellssharedesktop a img {
 .redeem .btn:hover {
   background-color: transparent;
   border-color: #FAB901;
->>>>>>> a7083d8a5e92ffd0e1622646345d965fa9b05b0a
 }
