@@ -20,12 +20,13 @@
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
-		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" async src="https://cdn.swellrewards.com/loader/XKnEIZ_Zv_EdmsvT3vl0KA.js?guid=XKnEIZ_Zv_EdmsvT3vl0KA"></script>
 		<script src="https://kit.fontawesome.com/b1eb609035.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.magnific-popup.js"></script>
 		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/slick.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/custom-js.js"></script>
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/custom-js.js" defer></script>
 
 		<?php wp_head(); ?>
 
