@@ -100,7 +100,5 @@ get_header();
 
 </main>
 
-<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/XKnEIZ_Zv_EdmsvT3vl0KA" async></script>
-
 <?php
 get_footer();
