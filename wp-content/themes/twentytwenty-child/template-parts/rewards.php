@@ -13,6 +13,8 @@ get_header();
 
 <main id="main" class="rewards-page">
 
+  <?php global $current_user; wp_get_current_user(); ?>
+  
   <?php if( have_rows('banner_group')) : 
     $banner = get_field('banner_group');
   ?>
@@ -35,11 +37,13 @@ get_header();
         <p class="section-subtitle"><i><?php echo $banner['text'] ?></i></p>
         <?php endif; ?>
         <div class="section-action">
-          <?php if (isset($banner['button_1_link']) && isset($banner['button_1_label'])) : ?>
-          <a href="<?php echo $banner['button_1_link'] ?>" class="btn anim fade left" role="button"><?php echo $banner['button_1_label'] ?></a>
-          <?php endif; ?>
-          <?php if (isset($banner['button_2_link']) && isset($banner['button_2_label'])) : ?>
-          <a href="<?php echo $banner['button_2_link'] ?>" class="btn anim fade right" role="button"><?php echo $banner['button_2_label'] ?></a>
+          <?php if ( !is_user_logged_in() ) : ?>
+            <?php if (isset($banner['button_1_link']) && isset($banner['button_1_label'])) : ?>
+            <a href="<?php echo $banner['button_1_link'] ?>" class="btn anim fade left" role="button"><?php echo $banner['button_1_label'] ?></a>
+            <?php endif; ?>
+            <?php if (isset($banner['button_2_link']) && isset($banner['button_2_label'])) : ?>
+            <a href="<?php echo $banner['button_2_link'] ?>" class="btn anim fade right" role="button"><?php echo $banner['button_2_label'] ?></a>
+            <?php endif; ?>
           <?php endif; ?>
         </div>
       </div>
@@ -47,38 +51,17 @@ get_header();
   </section>
   <?php endif; ?>
 
-  <!-- <section class="section hero pos-rel anim fade up slow">
-    <div class="w-100 fs-0 bg-snow">
-    <picture>
-      <source media="(min-width:1025px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/banner-img@2x.jpg">
-      <source media="(max-width:1024px)" srcset="<?php echo get_stylesheet_directory_uri() ?>/assets/images/banner-img-m.jpg">
-      <img class="w-100" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/banner-img@2x.jpg" />
-    </picture>
-    </div>
-    <div class="pos-abs w-100 h-100 pos-t md:w-100 md:h-1/2 md:pos-t-1/2">
-      <div class="pos-rel w-1/2 v-center text-center md:w-100">
-        <h2 class="section-title text-upper">
-        Relief<br><span class="section-title-em">REWARDS</span></h1>
-        <p class="section-subtitle"><i>As a rewards member, you’ll get closer to earning exclusive rewards<br>every time you shop.</i></p>
+  <?php if ( is_user_logged_in() ) : ?>
+    <section class="section balance hidden">
+      <div class="w-1/2 mx-auto text-center md:w-100">
+        <h2 class="section-title text-upper">Hi, <?php echo $current_user->user_login ?>, <br>You Have <span class="point-balance">0</span> Points</h2>
         <div class="section-action">
-          <a href="/my-account/" class="btn anim fade left" role="button">Sign Up</a>
-          <a href="/my-account/" class="btn anim fade right" role="button">Sign In</a>
+          <a href="/cart" class="btn anim fade left slow" role="button">Redeem Now</a>
+          <!-- <a href="#" class="btn anim fade left slow" role="button">Rewards History</a> -->
+          <a class="swell-history-link btn anim fade left slow" href="javascript:void(0)">Rewards History</a>
         </div>
       </div>
-    </div>
-  </section> -->
-
-  <?php global $current_user; wp_get_current_user(); ?>
-  <?php if ( is_user_logged_in() ) : ?>
-  <section class="section balance hidden">
-    <div class="w-1/2 mx-auto text-center md:w-100">
-      <h2 class="section-title text-upper">Hi, <?php echo $current_user->user_login ?>, <br>You Have <span class="point-balance">0</span> Points</h2>
-      <div class="section-action">
-        <a href="/cart" class="btn anim fade left slow" role="button">Redeem Now</a>
-        <a href="#" class="btn anim fade left slow" role="button">Rewards History</a>
-      </div>
-    </div>
-  </section>
+    </section>
   <?php endif; ?>
 
   <?php if (have_rows('hiw_group')) :
@@ -213,6 +196,8 @@ get_header();
   </section>
   <?php endif; ?>
 </main>
+
+<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/XKnEIZ_Zv_EdmsvT3vl0KA" async></script>
 
 <?php
 get_footer();

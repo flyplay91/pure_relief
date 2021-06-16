@@ -92,7 +92,7 @@ Text Domain: twentytwenty-child
   --color-green: #0dbc00;
 }
 
-<<<<<<< HEAD
+
 .desktop {
   display:block;
 }
@@ -109,8 +109,6 @@ Text Domain: twentytwenty-child
 }
 
 
-=======
->>>>>>> a7083d8a5e92ffd0e1622646345d965fa9b05b0a
 /* Global Style */
 .inner-section-1470 {
   max-width: 1470px;
@@ -1484,6 +1482,393 @@ box-shadow: 0px 0px 13px -4px #000000;
   text-decoration: none;
 }
 
+
+.header-logo a {
+  max-width: 240px;
+  display: block;
+}
+.header-logo a:hover {
+  transform:scale(1.03);
+  transition: 0.3s;
+}
+
+/* Announcement Bar Style 1 */
+.header-bar-style1 {
+  background-color: #262a2b;
+  position:relative;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px 20px 0px 20px;
+  min-height: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display:flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  text-decoration:none;
+}
+.header-bar-style1 span {
+  color: #FFFFFF;
+  font-family: "Roboto", Sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+/* End Announcement Bar Style 1 */
+
+/* Announcement Bar Style 2 */
+.header-bar-style2 {
+  background-color: #212121;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #d6d6d6;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 15px;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  justify-content:center;
+  --iteration-count: infinite;
+  --animation-duration: 1200ms;
+  --dynamic-text-color: #FFFFFF;
+  width: auto;
+}
+
+.header-bar-style2 p {
+  text-decoration:none;
+  text-align: center;
+  font-family: "Oswald", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+  transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+  -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+  color:#fff;
+}
+.header-bar-style2 .style2-freeshipping {
+  display:inline-block;
+}
+.header-bar-style2 .style2-freeshipping span {
+  text-transform:uppercase;
+  font-weight:700;
+}
+.header-bar-style2 .style2-freeshipping svg {
+  position: absolute;
+  top: 51%;
+  left: 39.7%;
+  width: calc(8% + 20px);
+  height: calc(100% + 20px);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  overflow: visible;
+  height: 48px;
+}
+.header-bar-style2 .style2-freeshipping:hover span {
+  color: yellow;
+  transform: scale(1.1);
+  display: inline-block;
+  margin: 0px 5px;
+}
+.header-bar-style2 .style2-freeshipping:hover path {
+  stroke: yellow;
+}
+.header-bar-style2 .style2-freeshipping path {
+  stroke: #D10000;
+  stroke-width: 10px;
+}
+.header-bar-style2 .style2-button {
+  font-family: "Sofia Pro", Sans-serif;
+  font-weight: bold;
+  fill: #000000;
+  color: #000000;
+  background-color: #FAE70C;
+  border-radius: 100px 100px 100px 100px;
+  padding: 10px 25px 7px 25px;
+  text-transform:uppercase;
+  margin-left:20px;
+  line-height:25px;
+  letter-spacing: 1px;
+  font-style:italic;
+}
+.header-bar-style2 .style2-button:hover {
+  transform:scale(.9);
+  transition: 0.3s;
+  background:#EBC805;
+}
+/* End Announcement Bar Style 2 */
+
+/* Announcement Bar Style 3 */
+.header-bar-style3 {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #d6d6d6;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px 20px 5px 20px;
+  z-index: 100;
+  background-color: #EAE1E3;
+  background-image: url("https://woocommerce-389105-1955642.cloudwaysapps.com/wp-content/uploads/2021/04/Mothers-Day-Bundle-Leafs.png");
+  background-position: bottom center;
+  background-size: cover;
+  min-height:60px;
+  position:relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-bar-style3 span {
+  color: var( --e-global-color-primary );
+  font-family: "GT-Super-Display-Bold", Sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+  margin-right:10px;
+}
+.header-bar-style3 .style3-button {
+  font-family: "Sofia-Pro-Regular", Sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 2em;
+  fill: #000;
+  color: #000;
+  background-color: #EBC805;
+  border-radius: 6px 6px 6px 6px;
+  padding: 2px 15px;
+  margin: 0px 5px;
+}
+.header-bar-style3 .style3-button:hover {
+  color: #EBC805;
+  background-color: #000;
+  transform:scale(1.02);
+  transition:0.3s;
+}
+/* End Announcement Bar Style 3 */
+
+/* Announcement Bar Style 4 */
+.header-bar-style4 {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 5px 20px 5px 20px;
+  z-index: 100;
+  background-color: #EAE1E3;
+  background-image: url("https://woocommerce-389105-1955642.cloudwaysapps.com/wp-content/uploads/2020/09/fathersday-bg.jpg");
+  background-size: cover;
+  min-height:109px;
+  position:relative;
+  margin:0 auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-bar-style4 .style4-wrapper {
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width:1200px;
+  width:100%;
+}
+.header-bar-style4 .style4-title {
+  width:33%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  align-content: center;
+  align-items: center;
+  color: #005AB5;
+  font-family: "GT-Super-Display-Bold", Sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+}
+.header-bar-style4 .style4-message {
+  width:33%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  align-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: "Sofia-Pro-Regular", Sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align:center;
+  line-height: 27px;
+  justify-content: center;
+}
+.header-bar-style4 .style4-cta {
+  width: 33.333%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: normal;
+  align-items: baseline;
+  min-height:75px;
+}
+.header-bar-style4 .style4-cta img {
+  display:block;
+  width: 33%;
+}
+.header-bar-style4 .style4-cta .style4-button {
+  width:100%;
+  display:block;
+  text-align:center;
+}
+.header-bar-style4 .style4-cta .style4-button a {
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 7px 7px 7px 7px;
+  padding: 15px 25px 15px 25px;
+  text-transform:uppercase;
+}
+.header-bar-style4 .style4-cta .style4-button a:hover {
+  background-color: #005AB5;
+  color:#fff;
+  transform:scale(1.01);
+  transition:0.3s;
+  display:inline-block;
+  width:40%;
+  margin:0 auto;
+}
+/* End Announcement Bar Style 4 */
+
+
+/* Homepage Hero - Style 1 */
+.hero-style1 {
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F48A9C00;
+  background-image: url("https://woocommerce-389105-1955642.cloudwaysapps.com/wp-content/uploads/2021/05/Peach-Gummy-bg.jpg");
+  display: flex;
+  align-content: center;
+  align-items: center;  
+}
+.hero-style1 .hero-style1-wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;  
+  justify-content: space-between;
+  max-width:1440px;
+  padding:0px 0px 0px 50px;
+  width:100%;
+}
+.hero-style1 .style1-left {
+  width:50%;
+}
+.hero-style1 .style1-left h2 a {
+  color: #FFFFFF;
+  font-family: "GT-Super-Display-Bold", Sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+}
+.hero-style1 .style1-left ul {
+  list-style-type: none;
+  margin:20px 10px;
+}
+.hero-style1 .style1-left ul li {
+  font-family: "Sofia-Pro-Regular", Sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.5em;
+  color:#fff;
+}
+.hero-style1 .style1-left ul li i {
+  margin-right:10px;
+}
+.hero-style1 .style1-left a.hero-button-style1 {
+  font-family: "Sofia-Pro-Bold", Sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: normal;
+  fill: #FFFFFF;
+  background:#EBC805;
+  color:#000;
+  border-radius: 20px 20px 20px 20px;
+  padding: 25px 70px 25px 70px;
+  display:inline-block;
+}
+.hero-style1 .style1-left a.hero-button-style1:hover {
+  transform:scale(1.02);
+  transition:0.3s;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.hero-style1 .style1-right {
+  padding:0px;
+  margin:0px;
+  width:50%;
+}
+.hero-style1 .style1-right a {
+  display:block;
+  width:100%;
+  height:100%;
+  text-decoration:none;
+}
+.hero-style1 .style1-right .style-right-img {
+  background-image: url("https://wordpress-389105-1874158.cloudwaysapps.com/wp-content/uploads/2021/06/cannabidiol-infused-gummies-peach.png");
+  background-size:cover;
+  background-position:center;
+  display: block;
+  width: 100%;
+  min-height: 600px;
+}
+.hero-style1 .style1-right .style-right-img:hover {
+  transform:scale(1.02);
+  transition:0.3s;
+}
+/* End Homepage Hero - Style 1 */
+
+
+
+/* Home Reviews Section */
+.home-reviews {
+  margin: 45px auto 0px auto;
+  max-width: 1280px;
+  overflow: hidden;
+}
+.home-reviews h3 {
+  text-align:center;
+}
+
+
 /* ====================================================================== */
 /* =========================== Reward Page Style ========================== */
 /* ====================================================================== */
@@ -1948,6 +2333,7 @@ box-shadow: 0px 0px 13px -4px #000000;
 }
 .section.vips {
   padding-top: 120px;
+  display: none;
 }
 .section.vips .section-title {
   margin: 0 0 20px;
@@ -2006,391 +2392,7 @@ box-shadow: 0px 0px 13px -4px #000000;
   opacity: 1;
   transform: none;
 }
-<<<<<<< HEAD
-.header-logo a {
-  max-width: 240px;
-  display: block;
-}
-.header-logo a:hover {
-  transform:scale(1.03);
-  transition: 0.3s;
-}
 
-/* Announcement Bar Style 1 */
-.header-bar-style1 {
-  background-color: #262a2b;
-  position:relative;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px 20px 0px 20px;
-  min-height: 40px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display:flex;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-  text-decoration:none;
-}
-.header-bar-style1 span {
-  color: #FFFFFF;
-  font-family: "Roboto", Sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-}
-/* End Announcement Bar Style 1 */
-
-/* Announcement Bar Style 2 */
-.header-bar-style2 {
-  background-color: #212121;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: #d6d6d6;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 15px;
-  z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  width: 100%;
-  align-content: center;
-  align-items: center;
-  justify-content:center;
-  --iteration-count: infinite;
-  --animation-duration: 1200ms;
-  --dynamic-text-color: #FFFFFF;
-  width: auto;
-}
-
-.header-bar-style2 p {
-  text-decoration:none;
-  text-align: center;
-  font-family: "Oswald", Sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  -webkit-transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
-  transition: background .3s,border .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
-  -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
-  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
-  color:#fff;
-}
-.header-bar-style2 .style2-freeshipping {
-  display:inline-block;
-}
-.header-bar-style2 .style2-freeshipping span {
-  text-transform:uppercase;
-  font-weight:700;
-}
-.header-bar-style2 .style2-freeshipping svg {
-  position: absolute;
-  top: 51%;
-  left: 39.7%;
-  width: calc(8% + 20px);
-  height: calc(100% + 20px);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  overflow: visible;
-  height: 48px;
-}
-.header-bar-style2 .style2-freeshipping:hover span {
-  color: yellow;
-  transform: scale(1.1);
-  display: inline-block;
-  margin: 0px 5px;
-}
-.header-bar-style2 .style2-freeshipping:hover path {
-  stroke: yellow;
-}
-.header-bar-style2 .style2-freeshipping path {
-  stroke: #D10000;
-  stroke-width: 10px;
-}
-.header-bar-style2 .style2-button {
-  font-family: "Sofia Pro", Sans-serif;
-  font-weight: bold;
-  fill: #000000;
-  color: #000000;
-  background-color: #FAE70C;
-  border-radius: 100px 100px 100px 100px;
-  padding: 10px 25px 7px 25px;
-  text-transform:uppercase;
-  margin-left:20px;
-  line-height:25px;
-  letter-spacing: 1px;
-  font-style:italic;
-}
-.header-bar-style2 .style2-button:hover {
-  transform:scale(.9);
-  transition: 0.3s;
-  background:#EBC805;
-}
-/* End Announcement Bar Style 2 */
-
-/* Announcement Bar Style 3 */
-.header-bar-style3 {
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: #d6d6d6;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 5px 20px 5px 20px;
-  z-index: 100;
-  background-color: #EAE1E3;
-  background-image: url("https://woocommerce-389105-1955642.cloudwaysapps.com/wp-content/uploads/2021/04/Mothers-Day-Bundle-Leafs.png");
-  background-position: bottom center;
-  background-size: cover;
-  min-height:60px;
-  position:relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.header-bar-style3 span {
-  color: var( --e-global-color-primary );
-  font-family: "GT-Super-Display-Bold", Sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: -0.1px;
-  margin-right:10px;
-}
-.header-bar-style3 .style3-button {
-  font-family: "Sofia-Pro-Regular", Sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-style: normal;
-  line-height: 2em;
-  fill: #000;
-  color: #000;
-  background-color: #EBC805;
-  border-radius: 6px 6px 6px 6px;
-  padding: 2px 15px;
-  margin: 0px 5px;
-}
-.header-bar-style3 .style3-button:hover {
-  color: #EBC805;
-  background-color: #000;
-  transform:scale(1.02);
-  transition:0.3s;
-}
-/* End Announcement Bar Style 3 */
-
-/* Announcement Bar Style 4 */
-.header-bar-style4 {
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 5px 20px 5px 20px;
-  z-index: 100;
-  background-color: #EAE1E3;
-  background-image: url("https://woocommerce-389105-1955642.cloudwaysapps.com/wp-content/uploads/2020/09/fathersday-bg.jpg");
-  background-size: cover;
-  min-height:109px;
-  position:relative;
-  margin:0 auto;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.header-bar-style4 .style4-wrapper {
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width:1200px;
-  width:100%;
-}
-.header-bar-style4 .style4-title {
-  width:33%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  align-content: center;
-  align-items: center;
-  color: #005AB5;
-  font-family: "GT-Super-Display-Bold", Sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-}
-.header-bar-style4 .style4-message {
-  width:33%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  align-content: center;
-  align-items: center;
-  color: #000000;
-  font-family: "Sofia-Pro-Regular", Sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  text-align:center;
-  line-height: 27px;
-  justify-content: center;
-}
-.header-bar-style4 .style4-cta {
-  width: 33.333%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: normal;
-  align-items: baseline;
-  min-height:75px;
-}
-.header-bar-style4 .style4-cta img {
-  display:block;
-  width: 33%;
-}
-.header-bar-style4 .style4-cta .style4-button {
-  width:100%;
-  display:block;
-  text-align:center;
-}
-.header-bar-style4 .style4-cta .style4-button a {
-  font-family: "Roboto", Sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 1px;
-  fill: #FFFFFF;
-  color: #FFFFFF;
-  background-color: #000000;
-  border-radius: 7px 7px 7px 7px;
-  padding: 15px 25px 15px 25px;
-  text-transform:uppercase;
-}
-.header-bar-style4 .style4-cta .style4-button a:hover {
-  background-color: #005AB5;
-  color:#fff;
-  transform:scale(1.01);
-  transition:0.3s;
-  display:inline-block;
-  width:40%;
-  margin:0 auto;
-}
-/* End Announcement Bar Style 4 */
-
-
-/* Homepage Hero - Style 1 */
-.hero-style1 {
-  min-height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #F48A9C00;
-  background-image: url("https://woocommerce-389105-1955642.cloudwaysapps.com/wp-content/uploads/2021/05/Peach-Gummy-bg.jpg");
-  display: flex;
-  align-content: center;
-  align-items: center;  
-}
-.hero-style1 .hero-style1-wrapper {
-  display: flex;
-  align-content: center;
-  align-items: center;  
-  justify-content: space-between;
-  max-width:1440px;
-  padding:0px 0px 0px 50px;
-  width:100%;
-}
-.hero-style1 .style1-left {
-  width:50%;
-}
-.hero-style1 .style1-left h2 a {
-  color: #FFFFFF;
-  font-family: "GT-Super-Display-Bold", Sans-serif;
-  font-size: 55px;
-  font-weight: 700;
-}
-.hero-style1 .style1-left ul {
-  list-style-type: none;
-  margin:20px 10px;
-}
-.hero-style1 .style1-left ul li {
-  font-family: "Sofia-Pro-Regular", Sans-serif;
-  font-size: 25px;
-  font-weight: normal;
-  line-height: 1.5em;
-  color:#fff;
-}
-.hero-style1 .style1-left ul li i {
-  margin-right:10px;
-}
-.hero-style1 .style1-left a.hero-button-style1 {
-  font-family: "Sofia-Pro-Bold", Sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-style: normal;
-  fill: #FFFFFF;
-  background:#EBC805;
-  color:#000;
-  border-radius: 20px 20px 20px 20px;
-  padding: 25px 70px 25px 70px;
-  display:inline-block;
-}
-.hero-style1 .style1-left a.hero-button-style1:hover {
-  transform:scale(1.02);
-  transition:0.3s;
-  color: #FFFFFF;
-  background-color: #000000;
-}
-.hero-style1 .style1-right {
-  padding:0px;
-  margin:0px;
-  width:50%;
-}
-.hero-style1 .style1-right a {
-  display:block;
-  width:100%;
-  height:100%;
-  text-decoration:none;
-}
-.hero-style1 .style1-right .style-right-img {
-  background-image: url("https://wordpress-389105-1874158.cloudwaysapps.com/wp-content/uploads/2021/06/cannabidiol-infused-gummies-peach.png");
-  background-size:cover;
-  background-position:center;
-  display: block;
-  width: 100%;
-  min-height: 600px;
-}
-.hero-style1 .style1-right .style-right-img:hover {
-  transform:scale(1.02);
-  transition:0.3s;
-}
-/* End Homepage Hero - Style 1 */
-
-
-
-/* Home Reviews Section */
-.home-reviews {
-  margin: 45px auto 0px auto;
-  max-width: 1280px;
-  overflow: hidden;
-}
-.home-reviews h3 {
-  text-align:center;
-}
 
 /* Refer A Friend page */
 .refer-friend-page .section.hero .section-title {
