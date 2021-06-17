@@ -128,6 +128,13 @@ function redeem_checkout()
 	  // depending on your cart/checkout markup the selectors will need to be updated
 	})
 
+  $(document.body).on('updated_wc_div', function() {
+    if ($('#redemption-options option').length == 1) {
+      swellAPI.populateSelectWithRedemptionOptions("select#redemption-options");
+      $("#point-Total").html(swellAPI.getCustomerDetails().pointsBalance);
+    }
+  });
+
 	function applyReward() {
 	  	var fillAndSubmitCouponCodeForm = function(couponCode) {
 	    	// set the value for the coupon code input
