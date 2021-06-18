@@ -72,12 +72,20 @@ $(document).ready(function () {
 
   $('.swell-copy-link').on("click", function() {
     let value = $('.referral-link').text(); //Upto this I am getting value
+    let $message = $('.referral-message');
 
     let $temp = $("<input>");
     $("body").append($temp);
     $temp.val(value).select();
     document.execCommand("copy");
     $temp.remove();
+
+    if ($message.length) {
+      $message.text('Your referral link was copied!').addClass('success').removeClass('hidden').show();
+      setTimeout(function () {
+        $message.slideUp();
+      }, 5000);
+    }
   });
 
 });

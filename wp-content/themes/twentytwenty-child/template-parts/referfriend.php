@@ -50,6 +50,7 @@ get_header();
       <div class="hidden referral-link-wrapper text-center">
         <p>Your Referral Link: <a href="" class="referral-link"></a></p>
       </div>
+      <div class="hidden referral-message text-center"></div>
       <?php if (isset($send['send_form_content'])) : ?>
         <div class="send-request">
           <?php if (isset($send['send_form_title'])) : ?>

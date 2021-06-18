@@ -2432,6 +2432,7 @@ box-shadow: 0px 0px 13px -4px #000000;
 .referform {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .referform input {
   width: 450px;
@@ -2449,6 +2450,10 @@ box-shadow: 0px 0px 13px -4px #000000;
   font-family: "Oswald", Sans-serif;
   color: #0a0a0a;
   padding: 0;
+}
+.referform-message {
+  text-align: center;
+  padding: 10px;
 }
 .share-title {
   font-size: 18px !important;
@@ -2542,4 +2547,10 @@ ul.swellssharedesktop a img {
 .redeem .btn:hover {
   background-color: transparent;
   border-color: #FAB901;
+}
+.referral-link-wrapper p {
+  margin: 0;
+}
+.referral-message {
+  padding-top: 20px;
 }
