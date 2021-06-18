@@ -1,6 +1,13 @@
 jQuery(document).on('swell:setup', function () {
   var customerDetails = swellAPI.getCustomerDetails();
 
+  let $reflinkWrapper = $('.referral-link-wrapper');
+  if ($reflinkWrapper.length) {
+    let refLink = customerDetails.referralLink;
+    $reflinkWrapper.find('.referral-link').attr('href', refLink).html(refLink);
+    $reflinkWrapper.removeClass('hidden');
+  }
+
   var customerDetails2;
 
   jQuery.get('https://app.swellrewards.com/api/v2/customers?customer_email=' + customerDetails.email + '&with_referral_code=true&with_history=true&guid=XKnEIZ_Zv_EdmsvT3vl0KA&api_key=7rJyYF0UuEQ1T4mRddaXKgtt', function (data) {
@@ -11,6 +18,12 @@ jQuery(document).on('swell:setup', function () {
       $section.find(".point-balance").html(customerDetails2.points_balance);
       $section.removeClass('hidden');
     }
+    /* let $reflinkWrapper = $('.referral-link-wrapper');
+    if ($reflinkWrapper.length) {
+      let refLink = swellAPI.getCustomerDetails().referralLink;
+      $reflinkWrapper.find('.referral-link').attr('href', refLink).html(refLink);
+      $reflinkWrapper.removeClass('hidden');
+    } */
     
   }, 'text');
 });

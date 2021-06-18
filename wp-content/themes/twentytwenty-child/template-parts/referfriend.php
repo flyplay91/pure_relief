@@ -47,6 +47,9 @@ get_header();
       <?php if (isset($send['subtitle'])) : ?>
         <p class="section-subtitle text-center"><?php echo $send['subtitle'] ?></p>
       <?php endif; ?>
+      <div class="hidden referral-link-wrapper text-center">
+        <p>Your Referral Link: <a href="" class="referral-link"></a></p>
+      </div>
       <?php if (isset($send['send_form_content'])) : ?>
         <div class="send-request">
           <?php if (isset($send['send_form_title'])) : ?>
