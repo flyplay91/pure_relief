@@ -70,6 +70,16 @@ $(document).ready(function () {
     ]
   });
 
+  $('.swell-copy-link').on("click", function() {
+    let value = $('.referral-link').text(); //Upto this I am getting value
+
+    let $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(value).select();
+    document.execCommand("copy");
+    $temp.remove();
+  });
+
 });
 
 
