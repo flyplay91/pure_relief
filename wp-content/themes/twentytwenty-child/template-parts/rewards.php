@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-
+<!--- Template Parts > rewards.php -->
 <main id="main" class="rewards-page">
 
   <?php global $current_user; wp_get_current_user(); ?>

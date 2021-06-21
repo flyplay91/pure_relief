@@ -13,6 +13,20 @@ function my_acf_json_save_point( $path ) {
   return $path;
 }
 
+
+add_filter( 'woocommerce_loop_add_to_cart_link', 'misha_before_after_btn', 10, 3 );
+function misha_before_after_btn( $add_to_cart_html, $product, $args ){
+	
+	$url = $product->get_permalink();
+
+	$before = ''; // Some text or HTML here
+	//$after = '<a class="prod-viewmore" href="' . $url . '">Product Details</a>'; // Add some text or HTML here as well
+
+	return $before . $add_to_cart_html . $after;
+}
+
+
+
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page(array(
 		'page_title' 	=> 'Header & Footer Logo',
@@ -46,6 +60,16 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 }
+
+
+/* Upload SVG Files */
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+  }
+add_filter('upload_mimes', 'cc_mime_types');
+
+
 
 //Add Redeem CTA to cart page
 

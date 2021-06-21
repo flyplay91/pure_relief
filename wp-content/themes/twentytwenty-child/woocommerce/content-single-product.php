@@ -68,138 +68,186 @@ $product_title = $product->get_name();
 	</div>
 
 	<div class="product-extra">
-		<div class="product-extra__inner inner-section-1170">
-			<?php if( have_rows('about_group')) :
-				while ( have_rows('about_group')): the_row(); ?>
-					<div class="product-about">
-						<h2>About <?php echo $product_title ?></h2>
-						<div class="product-about-texts">
-							<?php if( have_rows('about_repeater') ) :
-								while( have_rows('about_repeater') ) : the_row();
-								$about_title = get_sub_field('title');
-								$about_description = get_sub_field('description');
-							?>
-								<div class="product-about-text">
-									<h3><?php echo $about_title ?></h3>
-									<?php echo $about_description ?>
-								</div>
-								<?php endwhile;
-							endif; ?>
-						</div>
-						<div class="product-about-imgs">
-							<?php if( have_rows('about_repeater') ) :
-								while( have_rows('about_repeater') ) : the_row();
-									$about_img_url = get_sub_field('image')['url'];
-									$about_img_alt = get_sub_field('image')['alt'];
-								?>
-									<img class="product-about-img" src="<?php echo $about_img_url ?>" alt="<?php echo $about_img_alt ?>" />
-								<?php endwhile;
-							endif; ?>
-						</div>
-					</div>
-				<?php endwhile;
-			endif; ?>
 
-			<?php if( have_rows('instructions_group')) :
-				$instructions_group = get_field('instructions_group');
-				$instructions_description = $instructions_group['description'];
-				while ( have_rows('instructions_group')): the_row(); ?>
-				<div class="product-instructions">
-					<h3>Instructions to <?php echo $product_title ?></h3>
-					<?php echo $instructions_description ?>
-				</div>
-				<?php endwhile;
-			endif; ?>
+	
 
-			<div class="product-ingredients-facts">
-				<?php if( have_rows('ingredients_group')) :
-					$ingredients_group = get_field('ingredients_group');
-					$instructions_description = $ingredients_group['description'];
-					while ( have_rows('ingredients_group')): the_row(); ?>
-						<div class="product-ingredients">
-							<h3>Ingredients of <?php echo $product_title ?></h3>
-							<div class="product-ingredients-facts-text">
-								<?php echo $instructions_description ?>
+
+		<div class="product-extra__inner inner-section-1170 product-tabs">
+
+		
+		<!-- Frequently Bought Together -->
+		<?php echo do_shortcode('[ywfbt_form]'); ?>
+
+
+		<!-- Description -->
+		<?php if( get_field('products_descritions_tab_title') ): ?>
+		<button class="product-accordion active">
+			<i class="fas fa-plus"></i>
+			<i class="fas fa-minus"></i>
+			<?php the_field('products_descritions_tab_title'); ?>
+		</button>
+		<?php endif; ?>
+			
+		<div class="tab-panel" <?php if( get_field('products_descritions_tab_title') ): ?>style="display:block;"<?php endif; ?>>
+			<div class="product-about">
+							<?php if( get_field('title_#1') ): ?>
+								<h2>
+									<?php the_field('title_#1'); ?>
+								</h2>
+							<?php endif; ?>
+							
+							
+
+							<div class="product-about-texts">
+									<div class="product-about-text">
+										<?php the_field('Description_1'); ?>
+									</div>
 							</div>
-						</div>
-					<?php endwhile;
-				endif; ?>
 
-				<?php if( have_rows('facts_group')) :
-					$facts_group = get_field('facts_group');
-					$instructions_description = $facts_group['description'];
-					while ( have_rows('facts_group')): the_row(); ?>
-						<div class="product-facts">
-							<h3>Nutrition Facts</h3>
-							<div class="product-ingredients-facts-text">
-								<?php echo $instructions_description ?>
+							<?php if( get_field('title_2') ): ?>
+								<h2>
+									<?php the_field('title_2'); ?>
+								</h2>
+							<?php endif; ?>
+							
+							
+							<?php if( get_field('Description_2') ): ?>
+							<div class="product-about-texts">
+									<div class="product-about-text">
+										<?php the_field('Description_2'); ?>
+									</div>
 							</div>
-						</div>
-					<?php endwhile;
-				endif; ?>	
+							<?php endif; ?>
+
+							<?php if( get_field('title_3') ): ?>
+								<h2>
+									<?php the_field('title_3'); ?>
+								</h2>
+							<?php endif; ?>
+							
+							
+
+							<?php if( get_field('Description_3') ): ?>
+							<div class="product-about-texts">
+									<div class="product-about-text">
+										<?php the_field('Description_3'); ?>
+									</div>
+							</div>
+							<?php endif; ?>
+
+
+							<div class="display-flex-center">
+
+							<div class="product-about-imgs">
+								<?php $image = get_field('product_image_1'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							</div>
+
+							<div class="product-about-imgs">
+								<?php $image = get_field('product_image_2'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							</div>
+
+							<div class="product-about-imgs">
+								<?php $image = get_field('product_image_3'); ?>
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							</div>
+
+							</div>
+
 			</div>
+		</div>
+
+		
+		<?php if( get_field('product_instructions_title') ): ?>
+		<div class="product-accordion-wrapper">
+		<button class="product-accordion">
+		<i class="fas fa-plus"></i>
+			<i class="fas fa-minus"></i>
+				<?php the_field('product_instructions_title'); ?></button>
+			<div class="tab-panel">
+					<div class="product-about-text product-instructions-tab">
+						<?php if( get_field('product_instructions_description') ): ?>
+							<?php the_field('product_instructions_description'); ?>
+						<?php endif; ?>
+		
+						
+			</div>
+		</div>
+		<?php endif; ?>
+		
+
+		<?php if( get_field('product_ingredients_title') ): ?>
+		<div class="product-accordion-wrapper">
+		<button class="product-accordion">
+		<i class="fas fa-plus"></i>
+			<i class="fas fa-minus"></i>
+			<?php the_field('product_ingredients_title'); ?></button>
+			<div class="tab-panel">
+					<div class="product-about-text product-instructions-tab">
+						<?php if( get_field('product_ingredients_description_') ): ?>
+							<?php the_field('product_ingredients_description_'); ?>
+						<?php endif; ?>
+						
+			</div>
+		</div>
+		<?php endif; ?>
+
+			
+					
+
+				
+			
 		</div>
 	</div>
 
-	<?php if( have_rows('related_product_group')) :
-        while ( have_rows('related_product_group')): the_row(); ?>
-			<div class="product-recommendation">
+						<script>
+						var acc = document.getElementsByClassName("product-accordion");
+								var i;
+
+								for (i = 0; i < acc.length; i++) {
+								acc[i].addEventListener("click", function() {
+									/* Toggle between adding and removing the "active" class,
+									to highlight the button that controls the panel */
+									this.classList.toggle("active");
+
+
+									/* Toggle between hiding and showing the active panel */
+									var panel = this.nextElementSibling;
+									if (panel.style.display === "block") {
+									panel.style.display = "none";
+									} else {
+									panel.style.display = "block";
+									}
+								});
+								} 
+
+
+
+
+
+						</script>
+
+
+	
+			<div class="product-recommendation inner-section-1170">
 				<div class="product-recommendation__inner inner-section-1170">
-					<h2>Customers who shopped for <?php echo $product_title ?> also shopped for:</h2>
-					<div class="product-recommendation-items">
-						<?php if( have_rows('product_repeater') ) :
-                            while( have_rows('product_repeater') ) : the_row();
-                            $product_obj = get_sub_field('product_item');
-                            $product_id = $product_obj->ID;
-                            $product = wc_get_product($product_id);
-                            $product_type = $product->get_type();
-                            $product_url = get_permalink( $product_id );
-                            $product_image = wp_get_attachment_image_src( get_post_thumbnail_id( $product_id ), 'single-post-thumbnail' );
-                            $product_title = get_the_title($product_id);
-                            $product_regular_price = $product->get_regular_price();
-                            $product_sale_price = $product->get_sale_price();
-                            $product_price = $product->get_price();
-                            $sale_badge = false;
-                            if ($product_type == "variable") {
-                                $product_available_variations = $product->get_available_variations();
-                                $from_product_price = $product_available_variations[0]['display_regular_price'];
-                                $to_product_price = $product_available_variations[0]['display_price'];
-                                $productPrice = '<label>' . $from_product_price . '</label><span>' . $to_product_price . '</span>';
-
-                                if ($from_product_price > $to_product_price) {
-                                    $sale_badge = true;
-                                }
-
-                            } else {
-                                if (($product_sale_price != null) && ($product_regular_price > $product_sale_price)) {
-                                    $productPrice = '<label>'.$product_regular_price.'</label><span>'.$product_sale_price.'</span>';
-                                    $sale_badge = true;
-                                } else {
-                                    $productPrice = $product_price;
-                                }
-                            }
-                        ?>
-						<div class="product-recommendation-item">
-							<a href="<?php echo $product_url ?>">
-								<?php if ($sale_badge == true) { ?>
-									<span class="onsale">Sale!</span>
-								<?php
-								} ?>
-								<img src="<?php  echo $product_image[0]; ?>">
-								<h3><?php echo $product_title ?></h3>
-							</a>
-							<div class="home-product-price">
-								<?php echo $productPrice ?>                                        
-							</div>
-							<a class="btn-recommendation-shop" href="<?php echo $product_url ?>">Shop Now</a>
-						</div>
-							<?php endwhile;
-    					endif; ?>
-					</div>
+					<h2 class="text-align-center">Customers who shopped for <?php echo $product_title ?> also shopped for:</h2>
+					
+					<?php echo do_shortcode('[woo-related]'); ?>
 				</div>
 			</div>
-		<?php endwhile;
-    endif; ?>
+	
+
+			
+
+			</div>
+		
 </div>
+
+
+
+
+
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

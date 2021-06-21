@@ -18,6 +18,10 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
+		
+
+
+
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<!-- <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.min.js"></script> -->
@@ -75,7 +79,7 @@
 
 
 
-			<div class="header-nav">
+			<div class="header-nav" id="header-menu">
 				<div class="header-logo">
 					<a href="/" title="Home">
 						<?php if ($logo_img) : ?>

@@ -1,6 +1,6 @@
 {
     "key": "group_6087c177c8a04",
-    "title": "Product Page",
+    "title": "Product Page-Latest",
     "fields": [
         {
             "key": "field_6087c1925b5e2",
@@ -286,7 +286,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": false,
     "description": "",
-    "modified": 1620304633
+    "modified": 1624247407
 }

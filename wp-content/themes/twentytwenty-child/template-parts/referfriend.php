@@ -10,7 +10,7 @@
 
 get_header();
 ?>
-
+<!--- Template Parts > referafriend.php -->
 <main id="main" class="refer-friend-page">
 
   <?php if (have_rows('banner_group')) : 

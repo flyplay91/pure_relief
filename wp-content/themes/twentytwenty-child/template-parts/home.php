@@ -10,6 +10,7 @@
 
 get_header();
 ?>
+<!--- Template Parts > home.php -->
 
 <main class="home-page">
 
@@ -111,6 +112,9 @@ get_header();
                                     } ?>
                                     
                                     <img src="<?php  echo $product_image[0]; ?>">
+
+                                    <div class="yotpo bottomLine yotpo-small" data-product-id="<?php echo $product_id ?>"></div>
+
                                     <h3><?php echo $product_title ?></h3>
                                     <div class="home-product-price">
                                         <?php echo $productPrice ?>                                        

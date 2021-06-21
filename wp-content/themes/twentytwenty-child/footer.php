@@ -21,7 +21,18 @@ $copyrighter_text = get_field('copyrighter_text', 'option');
 
 ?>
 			<footer class="site-footer">
-				<div class="footer-newsletter"></div>
+				<div class="footer-newsletter">
+				<div class="inner-section-1170">
+					<h3>Subscribe To Our Newsletter</h3>
+					<p>Be the first to know about our newest products and current offers. As a thank you, we’ll give you a 15% Off coupon!</p>
+
+					<div class="klaviyo-newsletter-footer">
+							<div class="klaviyo-form-PrFhDR"></div>
+					</div>
+				</div>
+
+				
+				</div>
 
 				<div class="footer-nav">
 					<div class="inner-section-1170 footer-nav__inner">
@@ -75,8 +86,6 @@ $copyrighter_text = get_field('copyrighter_text', 'option');
 
 		<?php wp_footer(); ?>
 
-		<!-- Yotpo Reviews -->
-			<script src='//staticw2.yotpo.com/YVkPWsKyByHFMKHTDmPNDuH9WRB5YPRj9FsF13o5/widget.js' id='yotpo_widget-js'></script>
-		<!-- End Yotpo Reviews -->
+		
 	</body>
 </html>

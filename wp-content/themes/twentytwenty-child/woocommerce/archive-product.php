@@ -37,7 +37,7 @@ $category_banner_url = get_field('category_banner', $post_id)['url'];
 $category_banner_alt = get_field('category_banner', $post_id)['alt'];
 $category_bottom_description = get_field('collection_description', $post_id);
 ?>
-
+<!--- Woocommerce > archive.product -->
 <main class="product-category-page">
 	<?php if( is_shop() ) : ?>
 		<section class="product-category__hero" style="background-color: #e8e0ce;">
@@ -79,6 +79,7 @@ $category_bottom_description = get_field('collection_description', $post_id);
 			
 			<?php
 			if ( woocommerce_product_loop() ) { ?>
+
 			<div class="category-products-block">
 				<?php
 					if ( wc_get_loop_prop( 'total' ) ) {
@@ -92,6 +93,10 @@ $category_bottom_description = get_field('collection_description', $post_id);
 						do_action( 'woocommerce_no_products_found' );
 					}
 				?>
+			</div>
+
+			<div class="cat-pagination">
+				<?php the_posts_pagination(); ?>    
 			</div>
 		</div>
 	</section>
