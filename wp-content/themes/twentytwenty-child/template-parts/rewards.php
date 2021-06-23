@@ -36,6 +36,7 @@ get_header();
         <?php if (isset($banner['text'])) : ?>
         <p class="section-subtitle"><i><?php echo $banner['text'] ?></i></p>
         <?php endif; ?>
+        
         <div class="section-action">
           <?php if ( !is_user_logged_in() ) : ?>
             <?php if (isset($banner['button_1_link']) && isset($banner['button_1_label'])) : ?>
@@ -45,6 +46,7 @@ get_header();
             <a href="<?php echo $banner['button_2_link'] ?>" class="btn anim fade right" role="button"><?php echo $banner['button_2_label'] ?></a>
             <?php endif; ?>
           <?php endif; ?>
+
         </div>
       </div>
     </div>
@@ -63,6 +65,14 @@ get_header();
       </div>
     </section>
   <?php endif; ?>
+
+
+  
+  <div class="referral-link-wrapper text-center">
+
+  <br /><p>Share By Link:<br /><a href="" class="referral-link"></a></p>
+
+  </div>
 
   <?php if (have_rows('hiw_group')) :
     $hiw = get_field('hiw_group');
@@ -194,6 +204,10 @@ get_header();
       </div>
     </div>
   </section>
+
+
+
+  
   <?php endif; ?>
 </main>
 
