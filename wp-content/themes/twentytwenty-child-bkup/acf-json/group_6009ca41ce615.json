@@ -1,0 +1,56 @@
+{
+    "key": "group_6009ca41ce615",
+    "title": "Subscription Management",
+    "fields": [
+        {
+            "key": "field_6009ca5ad353a",
+            "label": "One time product Link",
+            "name": "one_time_product_link",
+            "type": "url",
+            "instructions": "Please select or paste the one-time product link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6009cb14d8ecf",
+            "label": "Subscription Item Link",
+            "name": "subscription_item_link",
+            "type": "url",
+            "instructions": "Please select or paste the subscription product link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "paste link or select from page"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1624247388
+}

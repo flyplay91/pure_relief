@@ -1,0 +1,6 @@
+a:4:{s:3:"row";i:1;s:7:"message";s:47:"Product with same ID already exists. ID: 449395";s:6:"status";b:0;s:7:"post_id";s:0:"";}
+a:4:{s:3:"row";i:2;s:7:"message";s:30:"Product imported successfully.";s:6:"status";b:1;s:7:"post_id";i:1316600;}
+a:4:{s:3:"row";i:3;s:7:"message";s:30:"Product imported successfully.";s:6:"status";b:1;s:7:"post_id";i:1353006;}
+a:4:{s:3:"row";i:4;s:7:"message";s:30:"Product imported successfully.";s:6:"status";b:1;s:7:"post_id";i:2025269;}
+a:4:{s:3:"row";i:5;s:7:"message";s:59:"Basic version does not support import of variable products.";s:6:"status";b:0;s:7:"post_id";s:0:"";}
+a:4:{s:3:"row";i:6;s:7:"message";s:30:"Product imported successfully.";s:6:"status";b:1;s:7:"post_id";i:2032842;}
