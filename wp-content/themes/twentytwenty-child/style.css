@@ -1477,7 +1477,6 @@ a.product_type_simple:hover .product_type_simple span {
 .cross-sells .products {
   justify-content: center;
   align-items: center;
-  align-content;
 }
 .woocommerce-cart #cartredeemcta .elementor-widget:not(:last-child) {
   margin-bottom: 20px;
@@ -2830,7 +2829,7 @@ ul.swellssharedesktop a img {
 .referral-message {
   padding-top: 20px;
 }
-..header-menu .current-menu-item a {
+.header-menu .current-menu-item a {
   border-bottom: #FFE200 3px solid;
 }
 .refer-friend-page .section.balance {
@@ -3248,7 +3247,7 @@ h1.page-title {
   }
   .product-instructions-tab p {
     margin-bottom:25px;
-    lin-height:20px;
+    line-height:20px;
   }
   .product-tabs {
     margin-top:50px;
