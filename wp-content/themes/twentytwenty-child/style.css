@@ -3188,16 +3188,16 @@ ul.wcsatt-options-product, .wcsatt-options-product-dropdown {
   margin: 0px auto 20px auto;
 }
 .yith-wfbt-submit-block {
-  float:right;ul.wcsatt-options-product, .wcsatt-options-product-dropdown
+  float: right;
 }
 .yith-wfbt-submit-block .price_text {
-  text-align:center;
+  text-align: center;
 }
 .yith-wfbt-submit-block .yith-wfbt-submit-button {
 
   margin-top: 20px;
 }
-ul.wcsatt-options-product, .wcsatt-options-product-dropdown{
+ul.wcsatt-options-product, .wcsatt-options-product-dropdown {
   font-family:"Sofia Pro";
 }
 .woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button, .woocommerce-page .woocommerce-error .button, .woocommerce-page .woocommerce-info .button, .woocommerce-page .woocommerce-message .button {
