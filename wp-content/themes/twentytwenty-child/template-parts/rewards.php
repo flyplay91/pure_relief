@@ -46,6 +46,7 @@ get_header();
             <a href="<?php echo $banner['button_2_link'] ?>" class="btn anim fade right" role="button"><?php echo $banner['button_2_label'] ?></a>
             <?php endif; ?>
           <?php endif; ?>
+          <a href="/refer-a-friend" class="btn anim fade right" role="button">Refer and Earn</a>
 
         </div>
       </div>
@@ -61,6 +62,9 @@ get_header();
           <a href="/cart" class="btn anim fade left slow" role="button">Redeem Now</a>
           <!-- <a href="#" class="btn anim fade left slow" role="button">Rewards History</a> -->
           <a class="swell-history-link btn anim fade left slow" href="javascript:void(0)">Rewards History</a>
+
+          <a href="/refer-a-friend" class="btn anim fade right" role="button">Refer a Friend</a>
+
         </div>
       </div>
     </section>

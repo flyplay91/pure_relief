@@ -389,6 +389,7 @@ button:focus {
   top: 0;
   width: 100%;
   background-color: #fff;
+  min-width:100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -1249,7 +1250,8 @@ border-bottom: 1px solid #efefef;
   border: 1px solid #efefef;
 }
 .add_to_cart_button,
-a.product_type_simple {
+a.product_type_simple,
+.gform_button  {
   background-color: var(--color-bright-yellow) !important;
   border: solid 1px var(--color-bright-yellow) !important;
   display: block !important;
@@ -1268,8 +1270,9 @@ a.product_type_simple {
   margin-left:20px;
 }
 a.product_type_simple:hover,
-.add_to_cart_button:hover
-a.product_type_simple:hover .product_type_simple span {
+.add_to_cart_button:hover,
+a.product_type_simple:hover .product_type_simple span,
+.gform_button:hover {
   text-decoration: none !important;
   background-color: #000 !important;
   color:var(--color-bright-yellow) !important;
@@ -3766,4 +3769,299 @@ justify-content: center;
 .labresults-page .woocommerce-loop-product__title {
   color: #111;
   font-size: 20px !important;
+}
+.header-nav.sticky .header-menu {
+  width: 100%;
+}
+
+.applyforwholesale-page .aboutcontent-column {
+  min-height: 50vh;
+}
+.applyforwholesale-page .applywholesale-col {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.applyforwholesale-page h2 {
+  font-family: "Oswald", Sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.applyforwholesale-page h1 {
+  font-family: "Oswald", Sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+.applyforwholesale-page .wholesale-header {
+  padding:100px 0px;
+  text-align:center;
+  background-color: #eeeeee;
+  display:block;
+  justify-content: center;
+}
+.applyforwholesale-page .applywholesale-col h4{
+  font-family: "Oswald", Sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom:20px;
+}
+.applyforwholesale-page h3{
+  font-family: "Oswald", Sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-bottom:20px;
+}
+.applyforwholesale-page .applywholesale-col p{
+  font-family: "Sofia Pro", Sans-serif;
+  font-size: 22px;
+  text-align:left;
+  
+}
+.text-align-left,
+.text-align-left span,
+.text-align-left a,
+.text-align-left p,
+.text-align-left h1,
+.text-align-left h2,
+.text-align-left h3,
+.text-align-left h4{
+  text-align:left;
+}
+.applyforwholesale-page .why-choose  {
+  min-height: 70vh;
+}
+.applyforwholesale-page .gcform-col {
+  padding:50px;
+}
+.applyforwholesale-page .wholesale-icons {
+  padding:0x;
+  margin:0 auto;
+  width:100%;
+  background:#fefefe;
+  margin: 0px 0px 0px 0px;
+  border-top:1px solid #efefef;
+  border-bottom:1px solid #efefef;
+}
+.applyforwholesale-page .wholesale-icons ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
+}
+.applyforwholesale-page .wholesale-icons li {
+  width:20%;
+  display:block;
+}
+.applyforwholesale-page .aboutus-contentcontainer {
+  align-items:flex-start;
+}
+.applyforwholesale-page .wholesale-icons li a {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding:50px;
+  color: #111111;
+    font-family: "Oswald", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.applyforwholesale-page .wholesale-icons li  img{
+  width: 50%;
+}
+.applyforwholesale-page img.aboutpr-logo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 29%;
+  float: none;
+  margin: 20px auto 0px auto;
+}
+.applyforwholesale-page hr {
+  width: 25%;
+  margin: 20px auto 0px auto;
+  border:1px solid #000;
+}
+.applyforwholesale-page h1 {
+  text-transform: uppercase;
+  margin-top:0px;
+}
+.applyforwholesale-page .gform_wrapper .top_label input.medium, 
+.applyforwholesale-page .gform_wrapper .top_label select.medium,
+.applyforwholesale-page .gform_wrapper input{
+  width: 100%;
+  min-height:47px;
+}
+.affiliate-program-page .affiliate-hero {
+  min-height:600px;
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+}
+.affiliate-program-page .affiliate-hero h1 {
+  font-family: "GT-Super-Display-Bold";
+}
+.affiliate-program-page .affiliate-hero p {
+  font-family: "Sofia Pro";
+  font-size:24px;
+  max-width:70%;
+  margin:0 auto;
+}
+.affiliate-program-page .affiliate-icons {
+  background:#000;
+  padding:50px 0px;
+  font-size:25px;
+  border-top:0px;
+}
+.affiliate-program-page .affiliate-icons li {
+  color:#fff;
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform:uppercase;
+}
+.affiliate-program-page .affiliate-icons li  span{
+  width:100%;
+  padding:20px 0px;
+  text-align:center;
+}
+.affiliate-program-page .affiliate-icons li .fas,
+.affiliate-program-page .affiliate-icons li .far {
+  font-size:30px;
+  color:#000;
+  background:#fae70c;
+  padding:25px;
+  border-radius:50%;
+}
+.affiliate-program-page .whoisfor-reversion,
+.affiliate-program-page .whoisfor-shareasale {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align:center;
+  padding:30px 150px;
+}
+.affiliate-program-page .whoisfor-reversion p,
+.affiliate-program-page .whoisfor-shareasale p {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align:center;
+  min-height:165px;
+}
+.affiliate-program-page .whoisfor-shareasale {
+  background:#FAFAFA;
+}
+.affiliate-program-page .whoisfor-block .applywholesale-col img {
+  margin-bottom:50px;
+}
+.affiliate-program-page .whoisfor-block .btn.dark {
+  background:#000;
+  color:#fff;
+}
+.affiliate-program-page .whoisfor-block .btn.dark:hover {
+  background:#FAE70C;
+  color:#000;
+  border:1px solid #FAE70C;
+}
+.affiliate-program-page .become-affiliate-block {
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position:relative;
+}
+.black-overlay::before {
+  position: absolute; 
+  display: block;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  content:'';
+  z-index: 2; 
+  cursor: pointer; 
+}
+.affiliate-program-page .become-affiliate-block h2,
+.affiliate-program-page .become-affiliate-block p,
+.affiliate-program-page .become-affiliate-block h3 {
+  color:#fff;
+  z-index: 999;
+}
+.affiliate-program-page .become-affiliate-block h2,
+.affiliate-program-page .become-affiliate-block h3 {
+  font-family: "GT-Super-Display-Bold";
+  margin:20px 0px;
+}
+.affiliate-program-page .become-affiliate-block h2 {
+  font-size:55px;
+}
+.affiliate-program-page .become-affiliate-block h3 {
+  margin:55px 0px;
+  text-transform: none;
+}
+.affiliate-program-page .become-affiliate-block a.btn {
+  position:relative;
+  z-index:999;
+  font-family: "Oswald", Sans-serif;
+  font-style: italic;
+  font-size:16px;
+  padding: 10px;
+margin: 0px 20px;
+}
+.affiliate-program-page .become-affiliate-block a.btn-white {
+  color:#000;
+  background:#fff;
+}
+.affiliate-program-page .become-affiliate-block a.btn-yellow {
+  color:#000;
+  background:#EBC805;
+}
+.affiliate-program-page .become-affiliate-block a.btn-white:hover {
+  color:#000;
+  background:#EBC805;
+  transform: scale(1.02);
+}
+.affiliate-program-page .become-affiliate-block a.btn-yellow:hover {
+  color:#000;
+  background:#fff;
+  transform: scale(1.02);
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+  .header-menu {
+    display:none !important;
+  }
+  .header-search {
+    display: none;
+ }
+
 }
