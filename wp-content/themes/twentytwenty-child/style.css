@@ -3114,6 +3114,21 @@ align-items: flex-start;
   opacity: 0.85;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
+.background-overlay-black,
+.background-overlay
+ {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(180deg, #000 40%, #F2295B00 56%);
+  opacity: 0.85;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.aboutus-contentcontainer {
+  position:relative;
+}
 .whatnext-wrapper {
   display:block;
   float:none;
@@ -3128,6 +3143,7 @@ align-items: flex-start;
   text-shadow: 2px 2px 20px #fff;
   
 }
+
 .chase-moment {
   min-height:600px;
   margin:0px;
@@ -3253,7 +3269,7 @@ h1.page-title {
     line-height:20px;
   }
   .product-tabs {
-    margin-top:50px;
+    margin-top:10px;
   }
   .woorelated-title  {
     display:none;
@@ -3334,8 +3350,11 @@ ul.wcsatt-options-product, .wcsatt-options-product-dropdown {
   text-align: center;
 }
 .yith-wfbt-submit-block .yith-wfbt-submit-button {
-
   margin-top: 20px;
+    background: #cd2653 !important;
+    color: #ffffff;
+    border-color: #222222;
+
 }
 ul.wcsatt-options-product, .wcsatt-options-product-dropdown {
   font-family:"Sofia Pro";
@@ -4048,6 +4067,318 @@ margin: 0px 20px;
   background:#fff;
   transform: scale(1.02);
 }
+#yith-wcwl-form {
+  max-width: 100%;
+  width: 100%;
+}
+.page-id-2032919 .entry-header {display:none;}
+.wishlist-page-links a {
+  color:#000;
+  background:yellow;
+  margin:0px 10px;
+  border-radius:25px;
+  font-size:14px;
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  line-height: 38px;
+  font-style:italic;
+  font-weight: bold;
+  background-color:#fae70c;
+  border-radius: 40px 40px 40px 40px;
+  padding: 0px 20px 0px 20px;
+
+}
+.wishlist-page-links  {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.yith-wcwl-add-to-wishlist {
+  margin:20px 0px;
+}
+.page-id-2032919 #myModal {
+  display:none !important;
+}
+.wishlist_table .product-add-to-cart a {
+    display: table !important;
+    margin: 0 auto 5px !important;
+    text-align: center;
+    padding: 10px 20px !important;
+    min-width: 150px;
+    min-height: 30px;
+    border-radius: 0px;
+    line-height: 30px;
+    background:#000 !important;
+    color:#fff !important;
+    border:0px !important;
+    text-transform: none !important;
+}
+.yith_wcwl_wishlist_bulk_action {
+
+}
+.yith_wcwl_footer_additional_action .ask-an-estimate-button {
+  display:none;
+}
+.yith_wcwl_wishlist_footer .yith_wcwl_wishlist_bulk_action #bulk_actions {
+  min-width: 250px;
+  height: 60px;
+  padding: 0px;
+  border: 1px solid #000;
+  padding: 0px 0px 0px 20px;
+  font-size: 17px;
+}
+.discount-page .discount-hero {
+  padding: 55px 150px 150px 150px;
+}
+.discount-page .discount-hero h1 {
+  color: #111111;
+  font-family: "Oswald", Sans-serif;
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-shadow:none;
+}
+.discount-page .discount-hero p {
+  color: #111111;
+  font-family: "Oswald", Sans-serif;
+  font-size: 27px;
+  font-weight: 100;
+  line-height: 1.6em;
+  margin:20px auto;
+  max-width: 80%;
+}
+.discount-page .discount-hero .discount-video {
+  margin-top:40px;
+}
+.discount-page .prveterans-block {
+  min-height: 770px;
+  text-align:center;
+  z-index:999;
+}
+.discount-page .prveterans-block h2 {
+  color: #ffffff;
+  font-family: "Oswald", Sans-serif;
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 1.2em;
+  margin:0px 0px 30px 0px;
+  z-index:999;
+  position: relative;
+}
+.discount-page .prveterans-block p {
+  color: #FFFFFF;
+  font-family: "Oswald", Sans-serif;
+  font-size: 29px;
+  font-weight: 100;
+  line-height: 1.5em;
+  max-width:80%;
+  margin:0 auto 30px auto;
+  z-index:999;
+  position: relative;
+}
+.discount-page .prveterans-block svg {
+  text-align:center;
+  margin:0 auto 30px auto;
+  z-index:999;
+  position: relative;
+}
+.discount-page .prveterans-block .aboutcontent-column-wrap {
+  max-width:50%;
+  margin:0 auto;
+}
+.discount-page .prove-eligibility {
+  padding:150px 0px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  align-content: center;
+  
+}
+.discount-page .prove-eligibility h3{
+  color: #111111;
+font-family: "Oswald", Sans-serif;
+font-size: 36px;
+font-weight: 500;
+line-height: 1.2em;
+text-align:center;
+margin-bottom:20px;
+}
+.discount-page .prove-eligibility ul {
+  display:flex;
+  flex-direction: column;
+  margin:55px 0px;
+  justify-content: center;
+  align-items:center;
+  align-content:center;
+  width:50%;
+}
+.discount-page .prove-eligibility li {
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  font-family: "Oswald", sans-serif;
+  font-size:20px;
+  color:#000;
+  font-weight:100;
+  line-height: 52px;
+  width: 100%;
+  text-align: center;
+  display:block;
+}
+.background-overlay-light {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.85;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.button-white-border {
+  font-family: "Oswald", Sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #000000;
+  border-radius: 20px 20px 20px 20px;
+  padding: 20px 40px 20px 40px;
+  font-style: italic;
+}
+
+.page-footnotes {
+  text-align: left;
+  float: left;
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Oswald", "Sofia Pro", sans-serif;
+  font-weight: 100;
+}
+.discount-page .prove-4 p {
+  font-family: "Oswald", sans-serif;
+  font-size:22px;
+  color:#000;
+  font-weight:100;
+  width: 80%;
+  text-align: center;
+  display:block;
+  margin:10px auto 20px auto;
+}
+.post-2032928 .entry-content li {
+  line-height: 1.476;
+  margin-bottom:5px;
+  font-size:20px;
+
+}
+.post-2032928 .wsp-post {
+  padding-left:20px;
+}
+.sitemap-page .aboutus-whoispr__inner {
+  padding: 50px 0px;
+  display: block;
+  text-align: left;
+}
+.sitemap-page .aboutus-whoispr__inner h1 {
+  font-size:35px;
+  font-family: "GT-Super-Display-Bold", sans-serif;
+  margin-bottom:30px;
+  text-shadow: none;
+}
+.sitemap-page .wsp-pages-title,
+.sitemap-page .wsp-posts-title,
+.sitemap-page .wsp-products-title{
+  margin-bottom:20px;
+  font-size:25px;
+  font-family: "Sofia Pro", sans-serif;
+}
+.sitemap-page ul {
+  margin-bottom:20px;
+}
+.sitemap-page .sitemap-pages {
+  width:50%;
+}
+.sitemap-page li.wsp-post,
+.sitemap-page li.page_item,
+.sitemap-page .wsp-products-list li{
+  list-style: disc;
+  margin-left:20px;
+}
+.woocommerce-cart .product-name a {
+  color: green;
+}
+.woocommerce-cart .wc-proceed-to-checkout .checkout-button {
+  background-color: green;
+  border: solid 1px green;
+  color: #fff;
+}
+.woocommerce-cart .wc-proceed-to-checkout .checkout-button:hover {
+  color:#000;
+  text-decoration:none;
+}
+.woocommerce-cart .order-total .woocommerce-Price-amount.amount {
+color:green;
+font-size:20px;
+}
+.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 100%;
+  width: 100%;
+}
+.post-inner h1,
+.post-inner h2 {
+  color: #111111;
+  font-family: "Oswald", Sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+.post-inner h3{
+  color: #111111;
+  font-family: "Oswald", Sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin:10px 0px;
+}
+.post-inner p {
+  font-size:17px;
+}
+#post-2032932 .entry-header,
+#post-2032940 .entry-header {
+display:none;
+}
+.post-inner {
+  padding:50px 0px;
+}
+#site-content .post-inner {
+  padding-top: 50px;
+} 
+.footer-menu--items ul li a:hover,
+.footer-contact a:hover {
+  color: #FAE70C;
+}
+.breadcrumbs.inner-section-1250,
+.breadcrumbs.inner-section-1170 {
+  margin:25px auto;
+  padding:0px;
+}
+.archive .breadcrumbs.inner-section-1250, 
+.archive .breadcrumbs.inner-section-1170 {
+  margin: 25px auto;
+  padding: 0px 20px;
+}
+.subscription_details a.button {
+  padding:5px 10px;
+  margin:0px 0px 10px 0px;
+}
+  
 
 
 

@@ -19,6 +19,16 @@ get_header();
 <!---- End Static Homepage Hero -->
     
 
+	     <!------ Breadcrumb NavXT --->
+       <div class="breadcrumbs inner-section-1170" typeof="BreadcrumbList" vocab="https://schema.org/">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                    bcn_display();
+                    }?>
+                </div>
+        <!------ End Breadcrumb NavXT --->
+
     
         <section class="about-us">
             <div class="aboutus-whoispr__inner inner-section-1170">

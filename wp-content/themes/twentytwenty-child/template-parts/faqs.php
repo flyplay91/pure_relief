@@ -12,8 +12,22 @@ get_header();
 ?>
 <!--- Template Parts > home.php -->
 
+
 <main class="faqs-page">
 
+
+
+	     <!------ Breadcrumb NavXT --->
+		 <div class="breadcrumbs inner-section-1170" typeof="BreadcrumbList" vocab="https://schema.org/">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                    bcn_display();
+                    }?>
+                </div>
+        <!------ End Breadcrumb NavXT --->
+
+        
 <!---- Start Static Homepage Hero -->
     <?php //get_template_part( 'template-parts/homepage-hero-style1' ); ?>
 <!---- End Static Homepage Hero -->

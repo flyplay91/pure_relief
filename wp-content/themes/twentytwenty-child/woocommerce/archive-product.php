@@ -68,6 +68,17 @@ $category_bottom_description = get_field('collection_description', $post_id);
 		</section>
 				
 	<?php endif; ?>
+
+	     <!------ Breadcrumb NavXT --->
+		 <div class="breadcrumbs inner-section-1250" typeof="BreadcrumbList" vocab="https://schema.org/">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                    bcn_display();
+                    }?>
+                </div>
+        <!------ End Breadcrumb NavXT --->
+
 	
 	<section class="product-category__products">
 		<div class="product-category__products__inner inner-section-1250">

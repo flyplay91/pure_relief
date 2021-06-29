@@ -301,6 +301,22 @@ function woocommerce_referrals_custom_hook_endpoint2( $url, $endpoint, $value, $
     }
     return $url;
 }
+// Add wishlist button on my account menu
+add_filter ( 'woocommerce_account_menu_items', 'woocommerce_myaccount_referrals3' );
+function woocommerce_myaccount_referrals3( $menu_links ){
+    $new = array( 'custom_tracking_order_link4' => 'Wishlist' );
+    $menu_links = array_slice( $menu_links, 0, 1, true )
+        + $new
+        + array_slice( $menu_links, 1, NULL, true );
+    return $menu_links;
+}
+add_filter( 'woocommerce_get_endpoint_url', 'woocommerce_referrals_custom_hook_endpoint3', 12, 5 );
+function woocommerce_referrals_custom_hook_endpoint3( $url, $endpoint, $value, $permalink ){
+    if( $endpoint === 'custom_tracking_order_link4' ) {
+        $url = '/wishlist/';
+    }
+    return $url;
+}
 
 // Add Open Lab Sheets button before Shop Now Button
 add_filter('woocommerce_loop_add_to_cart_link', 'pl_before_after_btn', 10, 3);

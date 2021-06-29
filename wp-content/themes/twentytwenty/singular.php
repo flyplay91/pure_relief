@@ -11,7 +11,15 @@
 
 get_header();
 ?>
-
+  <!------ Breadcrumb NavXT --->
+  <div class="breadcrumbs inner-section-1170" typeof="BreadcrumbList" vocab="https://schema.org/">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                    bcn_display();
+                    }?>
+                </div>
+        <!------ End Breadcrumb NavXT --->
 <main id="site-content" role="main">
 
 	<?php
