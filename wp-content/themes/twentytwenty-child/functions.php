@@ -323,3 +323,14 @@ function pl_before_after_btn($add_to_cart_html, $product, $args)
 
     return $before . $add_to_cart_html . $after;
 }
+
+
+register_sidebar( array(
+  'name' => __( 'Sidebar Blog', 'twentytwenty-child' ),
+  'id' => 'sidebar-blog',
+  'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwenty-child' ),
+  'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+  'after_widget' => '</aside>',
+  'before_title' => '<h3 class="widget-title">',
+  'after_title' => '</h3>',
+) );
