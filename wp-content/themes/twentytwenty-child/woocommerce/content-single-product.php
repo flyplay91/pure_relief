@@ -34,6 +34,15 @@ global $product;
 $product_title = $product->get_name();
 
 ?>
+	     <!------ Breadcrumb NavXT --->
+		 <div class="breadcrumbs inner-section-1170" typeof="BreadcrumbList" vocab="https://schema.org/">
+                    <?php
+                    if(function_exists('bcn_display'))
+                    {
+                    bcn_display();
+                    }?>
+                </div>
+        <!------ End Breadcrumb NavXT --->
 
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	<div class="product-img-summary">

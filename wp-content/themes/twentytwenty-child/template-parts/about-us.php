@@ -21,7 +21,7 @@ get_header();
 
     
         <section class="about-us">
-            <div class="aboutus-whoispr__inner ≈≈≈">
+            <div class="aboutus-whoispr__inner inner-section-1170">
                 
             <h1>WHO IS PURE RELIEF?</h1>
                 

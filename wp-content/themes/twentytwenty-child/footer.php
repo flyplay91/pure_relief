@@ -87,5 +87,28 @@ $copyrighter_text = get_field('copyrighter_text', 'option');
 		<?php wp_footer(); ?>
 
 		
+<!-- Verify Pass -->
+<script src="https://cdn.verifypass.com/seller/launcher.js" data-key="a64e6dd89"></script>
+
+<!-- End Verify Pass -->
+	
+<!-- Push Crew -->
+	<script type="text/javascript">!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//www.rtb123.com/tags/17ED64AC-78CA-912A-7759-1DB19D44F1A2/btp.js";var t=document.getElementsByTagName("head")[0];t?t.appendChild(e,t):(t=document.getElementsByTagName("script")[0]).parentNode.insertBefore(e,t)}();</script>
+    
+    <script type="text/javascript">
+      (function(p,u,s,h){
+          p._pcq=p._pcq||[];
+          p._pcq.push(['_currentTime',Date.now()]);
+          s=u.createElement('script');
+          s.type='text/javascript';
+          s.async=true;
+          s.crossOrigin = 'anonymous';
+          s.src='https://cdn.pushcrew.com/js/a492336009f23071c0b5ed0a81b5b89a.js';
+          h=u.getElementsByTagName('script')[0];
+          h.parentNode.insertBefore(s,h);
+      })(window,document);
+    </script>
+<!-- End Push Crew -->
+		
 	</body>
 </html>
