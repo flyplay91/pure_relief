@@ -340,7 +340,6 @@ function pl_before_after_btn($add_to_cart_html, $product, $args)
     return $before . $add_to_cart_html . $after;
 }
 
-
 // Pagination
 function pagination($pages = '', $range = 4)
 {  
@@ -378,3 +377,4 @@ function pagination($pages = '', $range = 4)
          echo "</div>\n";
      }
 }
+
