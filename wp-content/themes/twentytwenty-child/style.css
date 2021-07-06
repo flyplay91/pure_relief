@@ -4711,6 +4711,16 @@ display:none;
   line-height: 28px;
 }
 
+.post-left-bar--item .recommended-post {
+  margin-bottom: 15px;
+}
+
+.post-left-bar--item .widget-blog-title a {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
 .mobile-menu {
   display: none;
 }

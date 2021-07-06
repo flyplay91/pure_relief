@@ -49,13 +49,6 @@ get_header();
                                         </a>
                                     </div>
                                     <div class="widget-post-description">
-                                        <div class="widget-blog-cat">
-                                            <?php
-                                                foreach( $categories as $category ) {
-                                                    echo $category->name.'<br>';
-                                                }
-                                            ?>
-                                        </div>
                                         <div class="widget-blog-title">
                                             <a href="<?php echo $post_link; ?>">
                                                 <?php echo $post_title; ?>
