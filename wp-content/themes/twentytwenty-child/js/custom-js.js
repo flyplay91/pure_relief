@@ -46,6 +46,17 @@ $(document).ready(function () {
     }
   }, 100); */
 
+  // Mobile menu
+  $('body').on('click', '.mobile-menu', function () {
+    $(this).toggleClass('open');
+    $('.mobile-menu-items').toggleClass('active');
+  });
+
+  $('body').on('click', '.mobile-menu-items > li', function () {
+    $(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
+  });
+
 
   
   $('.rewards-page .vips-carousel').length && $('.rewards-page .vips-carousel').slick({
