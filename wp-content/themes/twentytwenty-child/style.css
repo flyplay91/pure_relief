@@ -4715,6 +4715,10 @@ display:none;
   display: none;
 }
 
+.mobile-menu-items {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .post-left-bar {
     display: none;
@@ -4818,7 +4822,6 @@ display:none;
     top: 66px;
     width: 100%;
     background-color: var(--color-white);
-    display: none;
   }
 
   .mobile-menu-items li {
