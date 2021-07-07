@@ -184,7 +184,7 @@ get_header();
         while ( have_rows('what_group')): the_row(); ?>
         <section class="home-what" style="background-image: url(<?php echo $home_what_img_url ?>)">
             <div class="home-what__inner">
-                <div></div>
+                <div class="empty-div"></div>
                 <div class="home-what-content">
                     <h2><?php echo $home_what_title ?></h2>
                     <p><?php echo $home_what_text ?></p>
