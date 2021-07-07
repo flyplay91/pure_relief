@@ -130,12 +130,10 @@ get_header();
                         
                         while($post_query->have_posts()) : 
                             $post_query->the_post();	
-                            // $featured_img_url = the_post_thumbnail(get_the_ID(),'full');
-                            $featured_img_url = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ) );
                         ?>
                             <div class="blog-post-item">
                                 <div class="post-item-image">
-                                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post_id )) ?>">
+                                    <?php echo the_post_thumbnail(); ?>
                                 </div>
                                 
                                 <div class="post-item-content">
