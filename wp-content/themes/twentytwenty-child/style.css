@@ -4382,6 +4382,9 @@ display:none;
 /* ====================================================================== */
 /* ============================ Blog Archieve Page ========================= */
 /* ====================================================================== */
+.blog-page {
+
+}
 .blog-page__inner {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -4526,6 +4529,7 @@ display:none;
 
 .blog-sidebar {
   padding-left: 25px;
+  padding-top:45px;
 }
 
 .blog-sidebar-item {
