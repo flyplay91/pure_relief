@@ -15,7 +15,7 @@ get_header();
     <div class="blog-page__inner">
         <div class="blog-sidebar">
             <div class="blog-sidebar-item blog-sidebar-category">
-                <h2>Categories</h2>
+                <h2>Learn More</h2>
                 <ul>
                 <?php
                     $categories = get_categories();
@@ -27,7 +27,7 @@ get_header();
             </div>
 
             <div class="blog-sidebar-item blog-sidebar-tag">
-                <h2>Tags</h2>
+                <h2>Trending Topics</h2>
                 
                 <?php
                     $tags = get_tags();
