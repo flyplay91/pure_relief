@@ -1498,10 +1498,11 @@ a.product_type_simple:hover .product_type_simple span,
 table.variations select {
   margin-right: .5rem;
   border: 0px;
-  color: green;
-  font-weight: bold;
-  font-family: Sofia Pro;
+  font-family: "Sofia Pro", Sans-serif;
   letter-spacing: 0px;
+}
+table.variations select:focus-visible {
+  outline: none;
 }
 .cartflows_step-template-default .pagination-single {
   display:none;
@@ -3201,7 +3202,7 @@ h1.page-title {
   margin:auto;
 }
 .single-product .single_add_to_cart_button {
-  padding: 0;
+  padding: 0 !important;
   font-family: Oswald;
   font-weight: 700;
   font-size: 16px;
@@ -5052,6 +5053,23 @@ display:none;
   .mobile-menu-items {
     top: 66px;
   }
+
+  .variations .label {
+    display: none;
+  }
+
+  .variations .value > select {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .reset_variations {
+    display: none;
+  }
+
+  .single-product .product_title {
+    font-size: 35px;
+  }
 }
 
 
@@ -5176,5 +5194,18 @@ display:none;
   .archive .woocommerce-loop-product__title {
     margin: 20px auto;
     font-size: 16px;
+  }
+
+  .product-img-summary__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #wpgis-gallery .size-thumbnail {
+    width: 100px !important;
+  }
+
+  .single-product .product_title {
+    font-size: 30px;
   }
 }
