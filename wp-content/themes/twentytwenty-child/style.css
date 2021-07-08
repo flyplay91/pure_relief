@@ -5208,4 +5208,8 @@ display:none;
   .single-product .product_title {
     font-size: 30px;
   }
+
+  .breadcrumbs {
+    padding: 0 15px;
+  }
 }
