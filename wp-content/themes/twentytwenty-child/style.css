@@ -4711,9 +4711,8 @@ display:none;
   margin-right: 5px;
 }
 
-.post-image img {
-  max-height: 420px;
-  object-fit: contain;
+.post-image {
+  margin-top: 30px;
 }
 
 .post-right-bar {
