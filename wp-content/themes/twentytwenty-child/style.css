@@ -4679,6 +4679,41 @@ display:none;
 
 .post-content {
   width: 70%;
+  margin-top: 50px;
+}
+
+.post-content__inner > h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.post-author {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post-date {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+}
+
+.post-date:before {
+  content: '';
+  background-image: url('assets/images/post-date-icon.PNG');
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.post-image img {
+  max-height: 420px;
+  object-fit: contain;
 }
 
 .post-right-bar {
