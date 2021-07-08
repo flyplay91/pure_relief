@@ -239,6 +239,7 @@ function misha_remove_my_account_links( $menu_links ){
 	
 	return $menu_links;
 }
+
 // Email tracking on thank you order page
 add_action( 'woocommerce_thankyou', 'getEmail_tracking_thank_you_page' );
 function getEmail_tracking_thank_you_page($order_id) {

@@ -4863,9 +4863,17 @@ display:none;
   background-size:cover;
   background-repeat:no-repeat;
 }
-
-
-
+.post-content {
+    width: 100%;
+}
+.post-content p,
+.post-content ul {
+  margin-bottom:13px;
+}
+.post-content li {
+  list-style-type: disc;
+  margin-left: 20px !important;
+}
 
 
 @media screen and (max-width: 1024px) {
