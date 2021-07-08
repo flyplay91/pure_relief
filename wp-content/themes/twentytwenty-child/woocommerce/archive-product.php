@@ -79,6 +79,20 @@ $category_bottom_description = get_field('collection_description', $post_id);
                 </div>
         <!------ End Breadcrumb NavXT --->
 
+		<!-- Alert Promo 
+		<div class="collection-notice inner-section-1250">
+				<div class="alert">
+				
+				<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+					<div class="alert-content">
+					
+					Current Promo: Buy ANY 2 Edibles and get our Muscle Salve FOR FREE
+
+					<a class="btn">Learn More</a>
+				</div>
+
+				</div>
+		</div> -->
 	
 	<section class="product-category__products">
 		<div class="product-category__products__inner inner-section-1250">

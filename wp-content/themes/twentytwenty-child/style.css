@@ -2835,7 +2835,7 @@ ul.swellssharedesktop a img {
   padding-top: 20px;
 }
 .header-menu .current-menu-item a {
-  border-bottom: #FFE200 3px solid;
+  border-bottom: #FFE200 0px solid;
 }
 .refer-friend-page .section.balance {
   padding-top: 10px;
@@ -4748,6 +4748,91 @@ display:none;
 .mobile-menu-items {
   display: none;
 }
+
+/* Menu Badges */
+
+.menu-new-badge::after {
+	content: 'NEW*';
+	font-size: 10px;
+	color: #fff;
+	background: red;
+	position: absolute;
+	top: 8px;
+	right: -20px;
+	z-index: 999;
+	padding: 4px;
+}
+.menu-new-badge {
+	background:#000;
+	color:#fff !important;
+}
+.menu-new-badge a {
+	color:#fff !Important;
+}
+
+
+
+.menu-special-badge::after {
+	content: 'PROMO*';
+	font-size: 10px;
+	color: #fff;
+	background: blue;
+	position: absolute;
+	top: 8px;
+	right: -20px;
+	z-index: 999;
+	padding: 4px;
+}
+.menu-special-badge {
+	background:#000;
+	color:#fff !important;
+}
+.menu-special-badge a {
+	color:#fff !Important;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.alert-content {
+  display:flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+}
+
+.alert-content a.btn {
+  font-size: 15px;
+  min-width: auto;
+  margin-left: 50px;
+}
+.collection-notice {
+  background:url();
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+
+
 
 @media screen and (max-width: 1024px) {
   .header-menu {

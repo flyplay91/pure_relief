@@ -73,17 +73,22 @@ $logo_alt = get_field('logo_image', 'option')['alt'];
 
 
 
+		<!-- Free Shipping Over $100 / box icon -->
 		<?php //get_template_part( 'template-parts/announcement-bar-style1' ); 
 		?>
 
-		<?php get_template_part('template-parts/announcement-bar-style2'); ?>
+		<!-- Free Shipping Over $100 / Shop Now Button -->
+		<?php //get_template_part('template-parts/announcement-bar-style2'); ?>
 
+		<!-- Slim 2 buttons to the right-->
 		<?php //get_template_part( 'template-parts/announcement-bar-style3' ); 
 		?>
 
+		<!-- 3 column - [heading, subtitle, logo/button]-->
 		<?php //get_template_part( 'template-parts/announcement-bar-style4' ); 
 		?>
 
+		
 
 
 		<div class="header-nav" id="header-menu">

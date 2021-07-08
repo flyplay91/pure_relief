@@ -15,11 +15,11 @@ get_header();
 <main class="home-page">
 
 <!---- Start Static Homepage Hero -->
-    <?php get_template_part( 'template-parts/homepage-hero-style1' ); ?>
+    <?php //get_template_part( 'template-parts/homepage-hero-style1' ); ?>
 <!---- End Static Homepage Hero -->
     
 <!---- Start Homepage Hero - Rev Slider -->
-<?php //get_template_part( 'template-parts/home-hero-slider' ); ?>
+<?php get_template_part( 'template-parts/home-hero-slider' ); ?>
 
 <!---- End Homepage Hero - Rev Slider -->
 
