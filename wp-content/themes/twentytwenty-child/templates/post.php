@@ -90,7 +90,6 @@ get_header();
             </div>
         </div>
 
-        <div class="post-right-bar"></div>
     </div>
 </main>
 
